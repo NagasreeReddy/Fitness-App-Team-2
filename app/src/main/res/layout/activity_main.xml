@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_marginTop="@dimen/_50sdp"
+        android:id="@+id/img"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:src="@drawable/logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp" />
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_50sdp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/btnCoustomer"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_38sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@drawable/button_design"
+            android:gravity="center"
+            android:text="Customer"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/btnTrainer"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_38sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@drawable/button_design"
+            android:gravity="center"
+            android:text="Trainer"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold" />
+
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnGuestUser"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_38sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:background="@drawable/button_design"
+        android:layout_gravity="center"
+        android:text="Guest"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold" />
+
+</LinearLayout>
