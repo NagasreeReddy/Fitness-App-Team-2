@@ -2,18 +2,17 @@ package com.fitnessapp.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.DatePickerDialog;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.InputType;
-import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
-import android.widget.EditText;
+import android.widget.DatePicker;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -23,6 +22,8 @@ import com.fitnessapp.api.RetroClient;
 import com.fitnessapp.models.ResponseData;
 import com.google.android.material.textfield.TextInputEditText;
 
+import java.util.Calendar;
+
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -30,10 +31,13 @@ import retrofit2.Response;
 public class RegistrationActivity extends AppCompatActivity {
     Button btn_signin;
     TextView tv_already_have_acc;
-    TextInputEditText etName,etMobilenumber,etEmail,etPassword;
-    AutoCompleteTextView spin_drop_down;
-    String[] roles;
+    TextInputEditText etFirstName,etLastName,etEmail,etPassword,ertDateOfBirth;
     ProgressDialog progressDialog;
+    RadioGroup radioSex;
+    RadioButton radioMale,radioFemale;
+    int mYear,mMonth,mDay;
+    String DAY,MONTH,YEAR;
+    String gender;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,21 +48,23 @@ public class RegistrationActivity extends AppCompatActivity {
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        etName=(TextInputEditText)findViewById(R.id.etName);
-        etMobilenumber=(TextInputEditText)findViewById(R.id.etMobilenumber);
+        etFirstName=(TextInputEditText)findViewById(R.id.etFirstName);
+        etLastName=(TextInputEditText)findViewById(R.id.etLastName);
+        ertDateOfBirth=(TextInputEditText)findViewById(R.id.ertDateOfBirth);
+        radioSex=(RadioGroup)findViewById(R.id.radioSex);
+        radioMale=(RadioButton)findViewById(R.id.radioMale);
+        radioFemale=(RadioButton)findViewById(R.id.radioFemale);
         etEmail=(TextInputEditText)findViewById(R.id.etEmail);
         etPassword=(TextInputEditText)findViewById(R.id.etPassword);
-
-        roles = new String[] {"Admin", "User"};
-        spin_drop_down = findViewById(R.id.spin_drop_down);
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(getApplication(), R.layout.support_simple_spinner_dropdown_item, roles);
-        spin_drop_down.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        ertDateOfBirth.setFocusable(false);
+        ertDateOfBirth.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
+            public void onClick(View view) {
+                datepicker();
             }
         });
-        spin_drop_down.setAdapter(adapter);
+
+        getGender();
 
 
         tv_already_have_acc=(TextView) findViewById(R.id.tv_already_have_acc);
@@ -66,7 +72,7 @@ public class RegistrationActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                    startActivity(new Intent(RegistrationActivity.this, LoginActivity.class));
+                    startActivity(new Intent(RegistrationActivity.this, CustomerLoginPage.class));
 
             }
         });
@@ -75,13 +81,18 @@ public class RegistrationActivity extends AppCompatActivity {
         btn_signin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(etName.getText().toString().isEmpty()){
-                    Toast.makeText(RegistrationActivity.this, "Please Enter Name..", Toast.LENGTH_SHORT).show();
+                if(etFirstName.getText().toString().isEmpty()){
+                    Toast.makeText(RegistrationActivity.this, "Please Enter First Name..", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
-                if(etMobilenumber.getText().toString().isEmpty()){
-                    Toast.makeText(RegistrationActivity.this, "Please Enter MObile number..", Toast.LENGTH_SHORT).show();
+                if(etLastName.getText().toString().isEmpty()){
+                    Toast.makeText(RegistrationActivity.this, "Please Enter Last Name..", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                if(ertDateOfBirth.getText().toString().isEmpty()){
+                    Toast.makeText(RegistrationActivity.this, "Please Enter your DOB.", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
@@ -96,7 +107,7 @@ public class RegistrationActivity extends AppCompatActivity {
                 }
                 else
                 {
-                    //startActivity(new Intent(RegistrationActivity.this, LoginActivity.class));
+                    //startActivity(new Intent(RegistrationActivity.this, CustomerLoginPage.class));
                     submitData();
 
                 }            }
@@ -104,25 +115,25 @@ public class RegistrationActivity extends AppCompatActivity {
     }
 
     private void submitData() {
-        String name = etName.getText().toString();
+        String fname = etFirstName.getText().toString();
+        String lname = etLastName.getText().toString();
         String email = etEmail.getText().toString();
         String password = etPassword.getText().toString();
-        String mobileno = etMobilenumber.getText().toString();
-        String utype = spin_drop_down.getText().toString();
+        String dob = ertDateOfBirth.getText().toString();
 
         progressDialog = new ProgressDialog(RegistrationActivity.this);
         progressDialog.setMessage("Loading....");
         progressDialog.show();
 
         ApiService service = RetroClient.getRetrofitInstance().create(ApiService.class);
-        Call<ResponseData> call = service.userRegistration(name, email, mobileno,password,"User");
+        Call<ResponseData> call = service.userRegistration(fname,lname, email,password,gender,dob,"User");
         call.enqueue(new Callback<ResponseData>() {
             @Override
             public void onResponse(Call<ResponseData> call, Response<ResponseData> response) {
                 progressDialog.dismiss();
                 if (response.body().status.equals("true")) {
                     Toast.makeText(RegistrationActivity.this, response.body().message, Toast.LENGTH_LONG).show();
-                    Intent intent=new Intent(RegistrationActivity.this, LoginActivity.class);
+                    Intent intent=new Intent(RegistrationActivity.this, CustomerLoginPage.class);
                     startActivity(intent);
                     finish();
 
@@ -136,6 +147,40 @@ public class RegistrationActivity extends AppCompatActivity {
                 Toast.makeText(RegistrationActivity.this, t.getMessage(), Toast.LENGTH_LONG).show();
             }
         });
+    }
+
+    public void datepicker() {
+
+        final Calendar c = Calendar.getInstance();
+        mYear = c.get(Calendar.YEAR);
+        mMonth = c.get(Calendar.MONTH);
+        mDay = c.get(Calendar.DAY_OF_MONTH);
+
+
+        DatePickerDialog datePickerDialog = new DatePickerDialog(this,
+                new DatePickerDialog.OnDateSetListener() {
+
+                    @Override
+                    public void onDateSet(DatePicker view, int year,
+                                          int monthOfYear, int dayOfMonth) {
+                        DAY = dayOfMonth + "";
+                        MONTH = monthOfYear + 1 + "";
+                        YEAR = year + "";
+
+                        ertDateOfBirth.setText(dayOfMonth + "-" + (monthOfYear + 1) + "-" + year);
+
+                    }
+                }, mYear, mMonth, mDay);
+        datePickerDialog.show();
+    }
+    public void getGender(){
+        if (radioMale.isChecked()) {
+            gender="Male";
+        }
+        else {
+            gender="Female";
+
+        }
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

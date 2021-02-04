@@ -1,7 +1,5 @@
 package com.fitnessapp.activities;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.DatePickerDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -11,10 +9,12 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
-import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.RatingBar;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.fitnessapp.R;
 import com.fitnessapp.Utils;
@@ -22,6 +22,7 @@ import com.fitnessapp.api.ApiService;
 import com.fitnessapp.api.RetroClient;
 import com.fitnessapp.models.EditProfilePojo;
 import com.fitnessapp.models.ResponseData;
+import com.fitnessapp.models.TrainerEditProfilePojo;
 import com.google.android.material.textfield.TextInputEditText;
 
 import java.util.Calendar;
@@ -31,23 +32,25 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class EditProfileActivity extends AppCompatActivity {
-    TextInputEditText etFirstName,etLastName,etEmail,etPassword,ertDateOfBirth;
-    Button btnUpdateProfile;
-    SharedPreferences sharedPreferences;
+public class  TrainerEditProfileActivity extends AppCompatActivity {
+    TextInputEditText etFirstName,etLastName,etEmail,etPassword,ertDateOfBirth,etExperience,etStatus;
     ProgressDialog progressDialog;
     RadioGroup radioSex;
     RadioButton radioMale,radioFemale;
     int mYear,mMonth,mDay;
     String DAY,MONTH,YEAR;
-    List<EditProfilePojo> a1;
+    Button btnUpdateProfile;
+    SharedPreferences sharedPreferences;
+    List<TrainerEditProfilePojo> a1;
     ResponseData a2;
-    String utype;
+    String utype,rating,tid,status;
+    RatingBar ratingBar;
+    String gender;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_edit_profile);
+        setContentView(R.layout.activity_trainer_edit_profile);
 
         getSupportActionBar().setTitle("My Profile");
         getSupportActionBar().setHomeButtonEnabled(true);
@@ -56,14 +59,14 @@ public class EditProfileActivity extends AppCompatActivity {
         etFirstName=(TextInputEditText)findViewById(R.id.etFirstName);
         etLastName=(TextInputEditText)findViewById(R.id.etLastName);
         ertDateOfBirth=(TextInputEditText)findViewById(R.id.ertDateOfBirth);
+        etExperience=(TextInputEditText)findViewById(R.id.etExperience);
         radioSex=(RadioGroup)findViewById(R.id.radioSex);
         radioMale=(RadioButton)findViewById(R.id.radioMale);
         radioFemale=(RadioButton)findViewById(R.id.radioFemale);
         etEmail=(TextInputEditText)findViewById(R.id.etEmail);
         etPassword=(TextInputEditText)findViewById(R.id.etPassword);
-
-        etEmail.setEnabled(false);
-
+        etStatus=(TextInputEditText)findViewById(R.id.etStatus);
+        ratingBar=(RatingBar)findViewById(R.id.ratingBar);
         ertDateOfBirth.setFocusable(false);
         ertDateOfBirth.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -72,7 +75,7 @@ public class EditProfileActivity extends AppCompatActivity {
             }
         });
 
-
+        etEmail.setEnabled(false);
 
         getMyProfile();
         btnUpdateProfile=(Button)findViewById(R.id.btnUpdateProfile);
@@ -87,37 +90,39 @@ public class EditProfileActivity extends AppCompatActivity {
     public void getMyProfile(){
         sharedPreferences = getSharedPreferences(Utils.SHREF, Context.MODE_PRIVATE);
         String session = sharedPreferences.getString("user_name", "def-val");
-        progressDialog = new ProgressDialog(EditProfileActivity.this);
+        progressDialog = new ProgressDialog(TrainerEditProfileActivity.this);
         progressDialog.setMessage("Loading....");
         progressDialog.show();
 
         ApiService service = RetroClient.getRetrofitInstance().create(ApiService.class);
-        Call<List<EditProfilePojo>> call = service.editProfile(session);
-        call.enqueue(new Callback<List<EditProfilePojo>>() {
+        Call<List<TrainerEditProfilePojo>> call = service.trainereditProfile(session);
+        call.enqueue(new Callback<List<TrainerEditProfilePojo>>() {
             @Override
-            public void onResponse(Call<List<EditProfilePojo>> call, Response<List<EditProfilePojo>> response) {
+            public void onResponse(Call<List<TrainerEditProfilePojo>> call, Response<List<TrainerEditProfilePojo>> response) {
                 progressDialog.dismiss();
                 a1 = response.body();
-                EditProfilePojo user1 = a1.get(0);
-                if(user1.getGender().equals("Male")){
-                    radioMale.setChecked(true);
-                }
-                else {
-                    radioFemale.setChecked(true);
-                }
-                etFirstName.setText(user1.getFname());
-                etLastName.setText(user1.getLname());
-                etEmail.setText(user1.getEmail());
-                etPassword.setText(user1.getPass());
-                ertDateOfBirth.setText(user1.getDob());
-                 utype=user1.getUtype();
+                TrainerEditProfilePojo trainereditprofile = a1.get(0);
+
+                etFirstName.setText(trainereditprofile.getFname());
+                etLastName.setText(trainereditprofile.getLname());
+                etEmail.setText(trainereditprofile.getEmail());
+                etPassword.setText(trainereditprofile.getPassword());
+                etExperience.setText(trainereditprofile.getExp());
+                ertDateOfBirth.setText(trainereditprofile.getDob());
+                etStatus.setText(trainereditprofile.getStatus());
+                ratingBar.setRating(Float.parseFloat(trainereditprofile.getRating()));
+
+                 utype=trainereditprofile.getUtype();
+                 rating=trainereditprofile.getRating();
+                 tid=trainereditprofile.getTid();
+                 status=trainereditprofile.getStatus();
 
             }
 
             @Override
-            public void onFailure(Call<List<EditProfilePojo>> call, Throwable t) {
+            public void onFailure(Call<List<TrainerEditProfilePojo>> call, Throwable t) {
                 progressDialog.dismiss();
-                Toast.makeText(EditProfileActivity.this, "" + t.getMessage(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(TrainerEditProfileActivity.this, "" + t.getMessage(), Toast.LENGTH_SHORT).show();
 
             }
         });
@@ -127,14 +132,14 @@ public class EditProfileActivity extends AppCompatActivity {
         String lname = etLastName.getText().toString();
         String email = etEmail.getText().toString();
         String password = etPassword.getText().toString();
-        String dob = ertDateOfBirth.getText().toString();
+        String exp = etExperience.getText().toString();
 
-        progressDialog = new ProgressDialog(EditProfileActivity.this);
+        progressDialog = new ProgressDialog(TrainerEditProfileActivity.this);
         progressDialog.setMessage("Loading....");
         progressDialog.show();
 
         ApiService service = RetroClient.getRetrofitInstance().create(ApiService.class);
-        Call<ResponseData> call = service.updateProfile(fname,email,lname,utype,password);
+        Call<ResponseData> call = service.updateTrainerProfile(fname,email,lname,exp,rating,status,utype,tid,password);
 
         call.enqueue(new Callback<ResponseData>() {
             @Override
@@ -144,20 +149,21 @@ public class EditProfileActivity extends AppCompatActivity {
                 a2 = response.body();
 
                 if (response.body().status.equals("true")) {
-                    Toast.makeText(EditProfileActivity.this, response.body().message, Toast.LENGTH_LONG).show();
+                    Toast.makeText(TrainerEditProfileActivity.this, response.body().message, Toast.LENGTH_LONG).show();
                     finish();
                 } else {
-                    Toast.makeText(EditProfileActivity.this, response.body().message, Toast.LENGTH_LONG).show();
+                    Toast.makeText(TrainerEditProfileActivity.this, response.body().message, Toast.LENGTH_LONG).show();
                 }
             }
 
             @Override
             public void onFailure(Call<ResponseData> call, Throwable t) {
                 progressDialog.dismiss();
-                Toast.makeText(EditProfileActivity.this, "" + t.getMessage(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(TrainerEditProfileActivity.this, "" + t.getMessage(), Toast.LENGTH_SHORT).show();
 
             }
         });
+
     }
     public void datepicker() {
 
@@ -182,6 +188,15 @@ public class EditProfileActivity extends AppCompatActivity {
                     }
                 }, mYear, mMonth, mDay);
         datePickerDialog.show();
+    }
+    public void getGender(){
+        if (radioMale.isChecked()) {
+            gender="Male";
+        }
+        else {
+            gender="Female";
+
+        }
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

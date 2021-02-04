@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <ScrollView
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android">
+
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:orientation="vertical"
@@ -12,7 +14,7 @@
 
         <TextView
             android:id="@+id/tv_sign_up"
-            android:text=" Customer Sign up"
+            android:text=" Trainer Sign up"
             android:textSize="@dimen/_20sdp"
             android:layout_marginTop="@dimen/_45sdp"
             android:layout_marginLeft="@dimen/_10sdp"
@@ -77,7 +79,23 @@
                 android:maxLines="1" />
         </com.google.android.material.textfield.TextInputLayout>
 
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/TextInputLayout"
+            android:id="@+id/tv_exp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Experience"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp">
 
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etExperience"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
 
         <RadioGroup
             android:orientation="horizontal"
@@ -106,10 +124,6 @@
                 android:text="Female" />
 
         </RadioGroup>
-
-
-
-
 
         <com.google.android.material.textfield.TextInputLayout
             style="@style/TextInputLayout"

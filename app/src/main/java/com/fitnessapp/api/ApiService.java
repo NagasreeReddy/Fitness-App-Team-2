@@ -13,7 +13,7 @@ import retrofit2.http.GET;
 import retrofit2.http.Query;
 
 public interface ApiService {
-//"http://getfitt.club/"
+
     @GET("/getfit/getfit_registration.php")
     Call<ResponseData> userRegistration(
             @Query("fname") String fname,

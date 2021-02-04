@@ -12,7 +12,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".activities.TrainerLoginPage"></activity>
+        <activity android:name=".activities.CustomerLoginPage" />
+        <activity android:name=".activities.MainActivity" />
+        <activity android:name=".activities.GuestUserActivity" />
+        <activity android:name=".activities.ForgotPasswordActivity" />
+        <activity android:name=".activities.AddWorkOUtsActivity" />
+        <activity android:name=".activities.TrainerEditProfileActivity" />
+        <activity android:name=".activities.TrainerRegistrationActivity" />
+        <activity android:name=".activities.SearchTrainerActivity" />
+        <activity android:name=".activities.TrainerDashboardActivity" />
+        <activity android:name=".activities.UserDashboardActivity" />
+        <activity android:name=".activities.EditProfileActivity" />
+        <activity android:name=".activities.LoginActivity" />
+        <activity android:name=".activities.RegistrationActivity" />
         <activity android:name=".activities.SlashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.AdminDashBoardActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
