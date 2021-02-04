@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b89e31f-5b7a-433e-b3f8-eeb030fb93f3" name="Default Changelist" comment="" />
+    <list default="true" id="4b89e31f-5b7a-433e-b3f8-eeb030fb93f3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/CreateTrainingActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/LoginActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_create_training.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,6 +40,12 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ymaddula\Downloads\__MACOSX\FitnessApp\app\src\main\java\com\Fitness-App-Team-2firstcommmit\app\src\main\java\com\fitnessapp\activities" />
+      <recent name="C:\Users\ymaddula\Downloads\__MACOSX\FitnessApp\app\src\main\java\com\Fitness-App-Team-2firstcommmit\app\src\main\res\layout" />
+    </key>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -46,6 +64,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="466" y="0" key="#Project_Structure/0.0.1280.680@0.0.1280.680" timestamp="1612416741709" />
+    <state x="349" y="167" key="AndroidCreateResourceDirectoryDialog" timestamp="1612473741025">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="349" y="167" key="AndroidCreateResourceDirectoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1612473741025" />
     <state x="169" y="0" key="CommitChangelistDialog2" timestamp="1612470858566">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
