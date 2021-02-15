@@ -6,7 +6,7 @@
     android:id="@+id/layout_drawer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F8F7F7">
+    android:background="@drawable/tbg">
 
     <LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
@@ -14,16 +14,58 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/tv_phone"
-            android:text="Trainer Dashboard"
+        <Button
+
+            android:id="@+id/btnBooking"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_58sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@drawable/button_rounded3"
             android:gravity="center"
-            android:textSize="@dimen/_20sdp"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="5dp"
-            android:textColor="#858585"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:text="Bookings"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold" />
+
+
+        <Button
+
+            android:id="@+id/BtnViewContent"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_38sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@drawable/button_rounded3"
+            android:gravity="center"
+            android:text="View Content"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold" />
+
+
+
+
+
+
+        <Button
+            android:id="@+id/btnFeedBack"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_38sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@drawable/button_rounded3"
+            android:layout_gravity="left"
+            android:text="Feedback"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 

@@ -9,6 +9,9 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -29,6 +32,8 @@ public class TrainerLoginPage extends AppCompatActivity {
     Button btn_signin;
     TextView tvSignupHere,tv_forgot_pass;
     ProgressDialog pd;
+    AutoCompleteTextView spin_drop_down;
+    String[] roles;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +43,18 @@ public class TrainerLoginPage extends AppCompatActivity {
         getSupportActionBar().setTitle("Trainer Login");
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        roles = new String[] {"Admin", "Trainer"};
+
+        spin_drop_down = findViewById(R.id.spin_drop_down);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(getApplication(), R.layout.support_simple_spinner_dropdown_item, roles);
+        spin_drop_down.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+            }
+        });
+        spin_drop_down.setAdapter(adapter);
 
         editTextEmail=(TextInputEditText)findViewById(R.id.editTextEmail);
         editTextPassword=(TextInputEditText)findViewById(R.id.editTextPassword);
@@ -65,22 +82,50 @@ public class TrainerLoginPage extends AppCompatActivity {
         btn_signin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if(spin_drop_down.getText().toString().equals("Admin")){
+
+                    if(editTextEmail.getText().toString().isEmpty()){
+                        Toast.makeText(TrainerLoginPage.this, "Please Enter Valid Username", Toast.LENGTH_SHORT).show();
+                        return;
+                    }
+                    if(editTextPassword.getText().toString().isEmpty()){
+                        Toast.makeText(TrainerLoginPage.this, "Please Enter Valid Password", Toast.LENGTH_SHORT).show();
+                        return;
+                    }
+                    else {
+                        if(editTextEmail.getText().toString().equals("admin") && editTextPassword.getText().toString().equals("admin")) {
+                            startActivity(new Intent(TrainerLoginPage.this, AdminDashBoardActivity.class));
+
+                        }else {
+                            Toast.makeText(getApplicationContext(), "WrongCredentials", Toast.LENGTH_SHORT).show();
+                        }
+                    }
 
 
-                if(editTextEmail.getText().toString().isEmpty()){
-                    Toast.makeText(TrainerLoginPage.this, "Please Enter Valid Username", Toast.LENGTH_SHORT).show();
-                    return;
+
                 }
-                if(editTextPassword.getText().toString().isEmpty()){
-                    Toast.makeText(TrainerLoginPage.this, "Please Enter Valid Password", Toast.LENGTH_SHORT).show();
-                    return;
+                else if(spin_drop_down.getText().toString().equals("Trainer")){
+
+                    if(editTextEmail.getText().toString().isEmpty()){
+                        Toast.makeText(TrainerLoginPage.this, "Please Enter Valid Username", Toast.LENGTH_SHORT).show();
+                        return;
+                    }
+                    if(editTextPassword.getText().toString().isEmpty()){
+                        Toast.makeText(TrainerLoginPage.this, "Please Enter Valid Password", Toast.LENGTH_SHORT).show();
+                        return;
+                    }
+                    else {
+                        loginTrainer();
+
+                    }
+
                 }
                 else {
-                    loginTrainer();
-                    // startActivity(new Intent(CustomerLoginPage.this, UserDashboardActivity.class));
-
-
+                    Toast.makeText(TrainerLoginPage.this, "Please Choose Role", Toast.LENGTH_SHORT).show();
                 }
+
+
+
 
             }
         });

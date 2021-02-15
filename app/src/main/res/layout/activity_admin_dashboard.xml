@@ -6,61 +6,126 @@
     android:id="@+id/layout_drawer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F8F7F7">
+    android:alpha="0.9"
+    android:background="@drawable/sp">
+
 
     <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cdVerifyTrainer"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            app:cardBackgroundColor="@color/colorPrimaryDark"
-            app:cardCornerRadius="@dimen/_3sdp"
-            app:cardElevation="@dimen/_2sdp"
-            app:cardMaxElevation="@dimen/_3sdp">
 
-            <TextView
-                android:id="@+id/tvverifytrainer"
-                android:layout_width="match_parent"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/cdVerifyTrainer"
+                android:layout_width="180dp"
                 android:layout_height="wrap_content"
-                android:gravity="center"
-                android:fontFamily="@font/graphikregular"
-                android:padding="@dimen/_10sdp"
-                android:text="Verify Trainer"
-                android:textColor="#000"
-                android:textSize="@dimen/_15sdp" />
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_marginRight="@dimen/_2sdp"
+                android:layout_weight="1"
+                card_view:cardBackgroundColor="@android:color/transparent"
+                card_view:cardCornerRadius="@dimen/_10sdp"
+                card_view:cardElevation="@dimen/_5sdp"
+                card_view:cardUseCompatPadding="true">
 
-        </androidx.cardview.widget.CardView>
+                <LinearLayout
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cdAddworkouts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:src="@mipmap/ic_vtrainer" />
+
+
+                    <TextView
+
+                        android:id="@+id/login_applogo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="Verify Trainers"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/_15sdp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            app:cardBackgroundColor="@color/colorPrimaryDark"
-            app:cardCornerRadius="@dimen/_3sdp"
-            app:cardElevation="@dimen/_2sdp"
-            app:cardMaxElevation="@dimen/_3sdp">
 
-            <TextView
-                android:id="@+id/tvaddCources"
-                android:layout_width="match_parent"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/cdAddworkouts"
+                android:layout_width="180dp"
                 android:layout_height="wrap_content"
-                android:gravity="center"
-                android:fontFamily="@font/graphikregular"
-                android:padding="@dimen/_10sdp"
-                android:text="Add Workouts"
-                android:textColor="#000"
-                android:textSize="@dimen/_15sdp" />
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_marginRight="@dimen/_2sdp"
+                android:layout_weight="1"
+                card_view:cardBackgroundColor="@android:color/transparent"
+                card_view:cardCornerRadius="@dimen/_10sdp"
+                card_view:cardElevation="@dimen/_5sdp"
+                card_view:cardUseCompatPadding="true">
 
-        </androidx.cardview.widget.CardView>
+                <LinearLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@mipmap/ic_workout" />
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="Add Workouts Plan"
+                        android:textColor="#ffffff"
+
+                        android:textSize="@dimen/_15sdp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
     </LinearLayout>
+
+
+
 
     <com.google.android.material.navigation.NavigationView
         android:layout_width="wrap_content"

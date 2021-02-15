@@ -2,12 +2,14 @@
 <ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     xmlns:android="http://schemas.android.com/apk/res/android">
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/regg"
         android:orientation="vertical">
 
 
@@ -15,8 +17,9 @@
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_gravity="center"
+            android:alpha="0.8"
             android:scaleType="fitXY"
-            android:src="@drawable/logo" />
+            android:src="@drawable/logoo" />
 
         <TextView
             android:id="@+id/tv_sign_in"
@@ -25,7 +28,8 @@
             android:layout_marginLeft="@dimen/_15sdp"
             android:layout_marginTop="@dimen/_15sdp"
             android:text="Login as Trainer"
-            android:textColor="#000000"
+            android:textColor="#fff"
+            android:textStyle="bold"
             android:textSize="@dimen/_20sdp" />
 
 
@@ -69,6 +73,23 @@
                 android:maxLines="1" />
         </com.google.android.material.textfield.TextInputLayout>
 
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/TextInputLayoutSpin"
+            android:id="@+id/tv_login_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#000000"
+            android:hint="Logintype"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp">
+
+            <AutoCompleteTextView
+                android:id="@+id/spin_drop_down"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
 
 
 
@@ -79,7 +100,7 @@
             android:layout_marginLeft="@dimen/_10sdp"
             android:layout_marginTop="@dimen/_18sdp"
             android:layout_marginRight="@dimen/_10sdp"
-            android:background="@drawable/button_design"
+            android:background="@drawable/button_rounded3"
             android:gravity="center"
             android:text="Sign-In"
             android:textAllCaps="false"
@@ -91,7 +112,7 @@
 
         <LinearLayout
             android:gravity="center"
-            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_10sdp"
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -103,7 +124,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="Not Registered ? "
-                android:textColor="#000000"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
                 android:textSize="@dimen/_13sdp" />
 
 
@@ -114,7 +136,8 @@
                 android:layout_gravity="center"
                 android:text=" Signup here "
                 android:fontFamily="sans-serif-black"
-                android:textColor="#000000"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
                 android:textSize="@dimen/_13sdp" />
 
 
@@ -129,8 +152,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="@dimen/_10sdp"
-            android:text="Forgot password ?"
-            android:textColor="#000000"
+            android:text="Forget password ?"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
             android:textSize="@dimen/_13sdp" />
 
 

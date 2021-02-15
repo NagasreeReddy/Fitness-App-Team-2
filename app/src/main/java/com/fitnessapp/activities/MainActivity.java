@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, CustomerLoginPage.class));
-                finish();
+                //finish();
 
             }
         });
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this,TrainerLoginPage.class));
-                finish();
+                //finish();
 
 
             }
@@ -41,8 +41,8 @@ public class MainActivity extends AppCompatActivity {
         btnGuestUser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this,GuestUserActivity.class));
-                finish();
+                startActivity(new Intent(MainActivity.this,GuestWorkoutPlanActivity.class));
+                //finish();
 
 
             }

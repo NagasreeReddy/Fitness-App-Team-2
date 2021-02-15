@@ -3,12 +3,14 @@ package com.fitnessapp.activities;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.fitnessapp.R;
 import com.google.android.material.navigation.NavigationView;
@@ -17,6 +19,7 @@ public class UserDashboardActivity extends AppCompatActivity {
     private ActionBarDrawerToggle t;
     private NavigationView navigation_view;
     private DrawerLayout layout_drawer;
+    CardView cdMyProfile,cdworkoutplans,cdTrainers;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +27,34 @@ public class UserDashboardActivity extends AppCompatActivity {
         setContentView(R.layout.activity_user_dashboard);
 
         navigationView();
+        cdMyProfile=(CardView)findViewById(R.id.cdMyProfile);
+        cdMyProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(UserDashboardActivity.this,EditProfileActivity.class);
+                startActivity(intent);
+
+            }
+        });
+        cdworkoutplans=(CardView)findViewById(R.id.cdworkoutplans);
+        cdworkoutplans.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent=new Intent(UserDashboardActivity.this,WorkoutPlanActivity.class);
+                startActivity(intent);
+
+            }
+        });
+        cdTrainers=(CardView)findViewById(R.id.cdTrainers);
+        cdTrainers.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(UserDashboardActivity.this,GetVerifiedTrainersActivity.class);
+                startActivity(intent);
+
+            }
+        });
     }
 
     private void navigationView(){
@@ -51,6 +82,12 @@ public class UserDashboardActivity extends AppCompatActivity {
                     case R.id.view_training_content:
                         Intent view_jobs=new Intent(getApplicationContext(), UserViewTrainingContent.class);
                         startActivity(view_jobs);
+                        break;
+
+
+                    case R.id.my_trainer_bookings:
+                        Intent bookings=new Intent(getApplicationContext(), UserBookingsActivity.class);
+                        startActivity(bookings);
                         break;
 
                     case R.id.logout:

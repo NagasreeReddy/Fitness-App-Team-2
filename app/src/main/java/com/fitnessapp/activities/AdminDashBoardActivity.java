@@ -1,6 +1,6 @@
 package com.fitnessapp.activities;
 
-/*import androidx.annotation.NonNull;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
@@ -19,28 +19,28 @@ public class AdminDashBoardActivity extends AppCompatActivity {
     private ActionBarDrawerToggle t;
     private NavigationView navigation_view;
     private DrawerLayout layout_drawer;
-    CardView cdVerifyTrainer,cdAddworkouts;
+    CardView cdVerifyTrainer, cdAddworkouts;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_dashboard);
 
-        cdVerifyTrainer=(CardView)findViewById(R.id.cdVerifyTrainer);
+        cdVerifyTrainer = (CardView) findViewById(R.id.cdVerifyTrainer);
         cdVerifyTrainer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent verifytrainer=new Intent(getApplicationContext(), VerifyTrainerActivity.class);
+                Intent verifytrainer = new Intent(getApplicationContext(), VerifyTrainersActivity.class);
                 startActivity(verifytrainer);
 
             }
         });
 
-        cdAddworkouts=(CardView)findViewById(R.id.cdAddworkouts);
+        cdAddworkouts = (CardView) findViewById(R.id.cdAddworkouts);
         cdAddworkouts.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent verifytrainer=new Intent(getApplicationContext(), AddWorkOUtsActivity.class);
+                Intent verifytrainer = new Intent(getApplicationContext(), AddWorkOutsActivity.class);
                 startActivity(verifytrainer);
 
             }
@@ -48,35 +48,39 @@ public class AdminDashBoardActivity extends AppCompatActivity {
         navigationView();
     }
 
-    private void navigationView(){
-        layout_drawer = (DrawerLayout)findViewById(R.id.layout_drawer);
-        t = new ActionBarDrawerToggle(this, layout_drawer,R.string.Open, R.string.Close);
+    private void navigationView() {
+        layout_drawer = (DrawerLayout) findViewById(R.id.layout_drawer);
+        t = new ActionBarDrawerToggle(this, layout_drawer, R.string.Open, R.string.Close);
         layout_drawer.addDrawerListener(t);
         t.syncState();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        navigation_view = (NavigationView)findViewById(R.id.navigation_view);
+        navigation_view = (NavigationView) findViewById(R.id.navigation_view);
         navigation_view.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 int id = item.getItemId();
-                switch(id)
-                {
+                switch (id) {
                     case R.id.myprofile:
-                        Intent intent=new Intent(getApplicationContext(), EditProfileActivity.class);
+                        Intent intent = new Intent(getApplicationContext(), EditProfileActivity.class);
                         startActivity(intent);
                         break;
                     case R.id.create_training:
-                        Intent intent1=new Intent(getApplicationContext(), CreateTrainingActivity.class);
+                        Intent intent1 = new Intent(getApplicationContext(), CreateTrainingActivity.class);
                         startActivity(intent1);
                         break;
 
                     case R.id.edit_training:
-                        Intent view_jobs=new Intent(getApplicationContext(), EditTrainingActivity.class);
+                        Intent view_jobs = new Intent(getApplicationContext(), EditTrainingActivity.class);
                         startActivity(view_jobs);
                         break;
 
+                    case R.id.view_training_content:
+                        Intent trainngcontent = new Intent(getApplicationContext(), GetMyWorkoutActivity.class);
+                        startActivity(trainngcontent);
+                        break;
+
                     case R.id.logout:
-                        Intent logout=new Intent(getApplicationContext(), LoginActivity.class);
+                        Intent logout = new Intent(getApplicationContext(), MainActivity.class);
                         startActivity(logout);
                         finish();
                         break;
@@ -90,6 +94,7 @@ public class AdminDashBoardActivity extends AppCompatActivity {
             }
         });
     }
+
     @Override
     public void onBackPressed() {
         if (layout_drawer.isDrawerOpen(GravityCompat.START)) {
@@ -109,4 +114,4 @@ public class AdminDashBoardActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
-}*/
+}

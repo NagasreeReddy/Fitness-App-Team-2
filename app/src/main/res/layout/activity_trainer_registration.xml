@@ -8,7 +8,8 @@
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:orientation="vertical"
-
+        android:background="@drawable/regg"
+        android:scaleType="fitXY"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -16,9 +17,10 @@
             android:id="@+id/tv_sign_up"
             android:text=" Trainer Sign up"
             android:textSize="@dimen/_20sdp"
-            android:layout_marginTop="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_20sdp"
             android:layout_marginLeft="@dimen/_10sdp"
-            android:textColor="#282C2E"
+            android:textColor="#fff"
+            android:textStyle="bold"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -193,7 +195,7 @@
             android:textColor="#fff"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_38sdp"
-            android:background="@drawable/button_design" />
+            android:background="@drawable/button_rounded3" />
 
         <TextView
             android:id="@+id/tv_already_have_acc"

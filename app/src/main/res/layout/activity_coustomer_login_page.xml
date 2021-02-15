@@ -8,6 +8,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/workoutplan"
         android:orientation="vertical">
 
 
@@ -15,17 +16,21 @@
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_gravity="center"
+
             android:scaleType="fitXY"
-            android:src="@drawable/logo" />
+            android:visibility="gone"
+            android:src="@drawable/logoo" />
 
         <TextView
+
             android:id="@+id/tv_sign_in"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/_15sdp"
-            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_150sdp"
             android:text="Login as Customer"
-            android:textColor="#000000"
+            android:textColor="#fff"
+            android:textStyle="bold"
             android:textSize="@dimen/_20sdp" />
 
 
@@ -79,7 +84,7 @@
             android:layout_marginLeft="@dimen/_10sdp"
             android:layout_marginTop="@dimen/_18sdp"
             android:layout_marginRight="@dimen/_10sdp"
-            android:background="@drawable/button_design"
+            android:background="@drawable/button_rounded3"
             android:gravity="center"
             android:text="Sign-In"
             android:textAllCaps="false"
@@ -103,7 +108,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="Not Registered ? "
-                android:textColor="#000000"
+                android:textColor="#fff"
+                android:textStyle="bold"
                 android:textSize="@dimen/_13sdp" />
 
 
@@ -114,7 +120,8 @@
                 android:layout_gravity="center"
                 android:text=" Signup here "
                 android:fontFamily="sans-serif-black"
-                android:textColor="#000000"
+                android:textColor="#fff"
+                android:textStyle="bold"
                 android:textSize="@dimen/_13sdp" />
 
 
@@ -129,8 +136,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="@dimen/_10sdp"
-            android:text="Forgot password ?"
-            android:textColor="#000000"
+            android:text="Forget password ?"
+            android:textColor="#fff"
+            android:textStyle="bold"
             android:textSize="@dimen/_13sdp" />
 
 
