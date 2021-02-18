@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">GetFit</string>
+
+
+    <string name="Open">Open navigation drawer</string>
+    <string name="Close">Close navigation drawer</string>
+
+    <string-array name="workouttype">
+        <item>Workout Type</item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+    </string-array>
+
+
+    <string-array name="workoutLevel">
+        <item>Workout Level</item>
+        <item>Beginer</item>
+        <item>Medium</item>
+        <item>High</item>
+    </string-array>
+
+
+    <string-array name="workoutTime">
+        <item>Workout Time</item>
+        <item>15 Min</item>
+        <item>30 Min</item>
+        <item>45 Min</item>
+        <item>1 Hr</item>
+    </string-array>
+
+    <string-array name="timings">
+        <item> Timings</item>
+        <item>7:00 AM</item>
+        <item>8:00 AM</item>
+        <item>9:00 AM</item>
+        <item>10:00 AM</item>
+        <item>3:00 PM</item>
+        <item>4:00 PM</item>
+        <item>5:00 PM</item>
+        <item>6:00 PM</item>
+    </string-array>
+
+
+    <string name="upload_image">UPLOAD IMAGE</string>
+
+    <string name="read_file">This app needs access to your file storage so that it can read photos.</string>
+</resources>

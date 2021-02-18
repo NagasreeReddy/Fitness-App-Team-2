@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fitnessapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activities.GiveFeedbackActivity"></activity>
+        <activity android:name=".activities.TrainersInfoActivity" />
+        <activity android:name=".activities.TrainersBookingActivity" />
+        <activity android:name=".activities.MyFeedBackActivity" />
+        <activity android:name=".activities.UserBookingsActivity" />
+        <activity android:name=".activities.GetMyWorkoutActivity" />
+        <activity android:name=".activities.GuestWorkoutPlanActivity" />
+        <activity android:name=".activities.GuestMensWorkoutPlanActivity" />
+        <activity android:name=".activities.GuestWomensWorkoutPlanActivity" />
+        <activity android:name=".activities.MensWorkoutDetailsActivity" />
+        <activity android:name=".activities.WomensWorkoutDetailsActivity" />
+        <activity android:name=".activities.WomensWorkoutPlanActivity" />
+        <activity android:name=".activities.MensWorkoutPlanActivity" />
+        <activity android:name=".activities.WorkoutPlanActivity" />
+        <activity android:name=".activities.GetVerifiedTrainersActivity" />
+        <activity android:name=".activities.VerifyTrainersActivity" />
+        <activity android:name=".activities.TrainerLoginPage" />
+        <activity android:name=".activities.CustomerLoginPage" />
+        <activity android:name=".activities.MainActivity" />
+        <activity android:name=".activities.GuestUserActivity" />
+        <activity android:name=".activities.ForgotPasswordActivity" />
+        <activity android:name=".activities.AddWorkOutsActivity" />
+        <activity android:name=".activities.TrainerEditProfileActivity" />
+        <activity android:name=".activities.TrainerRegistrationActivity" />
+        <activity android:name=".activities.UserViewTrainingContent" />
+        <activity android:name=".activities.SearchTrainerActivity" />
+        <activity android:name=".activities.TrainerDashboardActivity" />
+        <activity android:name=".activities.UserDashboardActivity" />
+        <activity android:name=".activities.EditTrainingActivity" />
+        <activity android:name=".activities.CreateTrainingActivity" />
+        <activity android:name=".activities.EditProfileActivity" />
+        <activity android:name=".activities.LoginActivity" />
+        <activity android:name=".activities.RegistrationActivity" />
+        <activity android:name=".activities.SlashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.AdminDashBoardActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/myprofile"
+        android:visible="false"
+        android:title="My Profile"/>
+
+    <item android:id="@+id/create_training"
+        android:visible="false"
+        android:title="Create Training"/>
+
+    <item android:id="@+id/edit_training"
+        android:visible="false"
+        android:title="Edit Training"/>
+
+    <item android:id="@+id/verify_trainer"
+        android:visible="false"
+        android:title="Verify Trainer"/>
+
+    <item android:id="@+id/view_training_content"
+        android:visible="false"
+        android:title="View Training Content"/>
+
+    <item android:id="@+id/logout"
+        android:title="Logout"/>
+
+    <!--
+        android:icon="@drawable/ic_user"
+-->
+</menu>
