@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/FitnessApp.iml" filepath="$PROJECT_DIR$/.idea/modules/FitnessApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/FitnessApp.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/FitnessApp.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Sukhdeep_Commit-FitnessApp.iml" filepath="$PROJECT_DIR$/.idea/modules/Sukhdeep_Commit-FitnessApp.iml" group="FitnessApp" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="FitnessApp/app" />
     </modules>
   </component>
 </project>
