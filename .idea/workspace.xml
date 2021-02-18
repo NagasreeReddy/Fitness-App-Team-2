@@ -12,8 +12,40 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="NONE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="453ce25f-23de-4e6e-b76f-72cbb9a1ca2d" name="Default Changelist" comment="" />
+    <list default="true" id="453ce25f-23de-4e6e-b76f-72cbb9a1ca2d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/GetMyWorkoutActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/GuestMensWorkoutPlanActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/GuestWomensWorkoutPlanActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/GuestWorkoutPlanActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/MensWorkoutDetailsActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/WomensWorkoutDetailsActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_get_my_workout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_guest_mens_workout_plan.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_guest_womens_workout_plan.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_guest_workout_plan.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_mens_workout_details.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_womens_workout_details.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,11 +82,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1nGsv5LQokgtPXGolX5csS60amE" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Pixel_3a_XL_API_29" />
     <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-01-20T04:12:32.037Z" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
@@ -181,12 +217,57 @@
       <option name="project" value="LOCAL" />
       <updated>1613610609402</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Fixed Commit Problem final">
+      <created>1613611008300</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1613611008300</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:C:/Users/student/Desktop/Nagasree_project_folder/Github_Commit/app/src/main/res" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="1" value="TOOL_WINDOW" />
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Fixed Commit Problem" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed Commit Problem" />
+    <MESSAGE value="Fixed Commit Problem final" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed Commit Problem final" />
   </component>
   <component name="WindowStateProjectService">
     <state x="533" y="173" key="#com.intellij.ide.util.MemberChooser" timestamp="1613041698665">
@@ -197,10 +278,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1612843033948" />
-    <state x="251" y="0" key="CommitChangelistDialog2" timestamp="1613610608344">
+    <state x="251" y="0" key="CommitChangelistDialog2" timestamp="1613612807915">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="251" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1613610608344" />
+    <state x="251" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1613612807915" />
     <state x="462" y="105" key="FileChooserDialogImpl" timestamp="1613608848673">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -225,14 +306,14 @@
     </state>
     <state width="1398" height="475" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1613042789608" />
     <state width="1398" height="245" key="GridCell.Tab.0.right/0.23.1440.820@0.23.1440.820" timestamp="1611041941529" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1613610615213">
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1613611021323">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1613610615213" />
-    <state x="492" y="277" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1613610693549">
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1613611021323" />
+    <state x="492" y="277" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1613611071175">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="492" y="277" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1613610693549" />
+    <state x="492" y="277" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1613611071175" />
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1611896077814">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
