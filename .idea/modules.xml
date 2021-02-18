@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Fitness-App-Team-2secondcommit.iml" filepath="$PROJECT_DIR$/.idea/Fitness-App-Team-2secondcommit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FitnessApp.iml" filepath="$PROJECT_DIR$/.idea/modules/FitnessApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/FitnessApp.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/FitnessApp.app.iml" />
     </modules>
   </component>
 </project>
