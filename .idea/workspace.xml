@@ -31,19 +31,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="453ce25f-23de-4e6e-b76f-72cbb9a1ca2d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/GiveFeedbackActivity.java" afterDir="false" />
+    <list default="true" id="453ce25f-23de-4e6e-b76f-72cbb9a1ca2d" name="Default Changelist" comment="MyFeedBackActivity And Layout Edited">
       <change afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/MyFeedBackActivity.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/TrainersBookingActivity.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/TrainersInfoActivity.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/UserBookingsActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_give_feedback.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_trainer_booking.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_trainers_info.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_user_booking.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_my_feedbacks.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -232,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613613582795</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="GiveFeedbackActivity And Layout Edited">
+      <created>1613614512065</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1613614512065</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -271,7 +273,8 @@
     <MESSAGE value="Fixed Commit Problem" />
     <MESSAGE value="Fixed Commit Problem final" />
     <MESSAGE value="Get workout finished" />
-    <option name="LAST_COMMIT_MESSAGE" value="Get workout finished" />
+    <MESSAGE value="GiveFeedbackActivity And Layout Edited" />
+    <option name="LAST_COMMIT_MESSAGE" value="GiveFeedbackActivity And Layout Edited" />
   </component>
   <component name="WindowStateProjectService">
     <state x="533" y="173" key="#com.intellij.ide.util.MemberChooser" timestamp="1613041698665">
@@ -282,9 +285,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1612843033948" />
-    <state x="251" y="0" width="967" height="728" key="CommitChangelistDialog2" timestamp="1613613581562">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="235" y="0" width="967" height="728" key="CommitChangelistDialog2" timestamp="1613614988720">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
+    <state x="235" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1613614988720" />
     <state x="251" y="0" width="967" height="728" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1613613581562" />
     <state x="462" y="105" key="FileChooserDialogImpl" timestamp="1613608848673">
       <screen x="0" y="0" width="1366" height="728" />
