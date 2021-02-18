@@ -32,13 +32,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="453ce25f-23de-4e6e-b76f-72cbb9a1ca2d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/GetMyWorkoutActivity.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/GuestMensWorkoutPlanActivity.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/GuestWomensWorkoutPlanActivity.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/GuestWorkoutPlanActivity.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/MensWorkoutDetailsActivity.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/WomensWorkoutDetailsActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_get_my_workout.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_guest_mens_workout_plan.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_guest_womens_workout_plan.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_guest_workout_plan.xml" afterDir="false" />
@@ -224,7 +222,21 @@
       <option name="project" value="LOCAL" />
       <updated>1613611008300</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Get workout finished">
+      <created>1613613403786</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1613613403786</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Get workout finished">
+      <created>1613613582795</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1613613582795</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -267,7 +279,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Fixed Commit Problem" />
     <MESSAGE value="Fixed Commit Problem final" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed Commit Problem final" />
+    <MESSAGE value="Get workout finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="Get workout finished" />
   </component>
   <component name="WindowStateProjectService">
     <state x="533" y="173" key="#com.intellij.ide.util.MemberChooser" timestamp="1613041698665">
@@ -278,10 +291,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1612843033948" />
-    <state x="251" y="0" key="CommitChangelistDialog2" timestamp="1613612807915">
+    <state x="251" y="0" width="967" height="728" key="CommitChangelistDialog2" timestamp="1613613581562">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="251" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1613612807915" />
+    <state x="251" y="0" width="967" height="728" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1613613581562" />
     <state x="462" y="105" key="FileChooserDialogImpl" timestamp="1613608848673">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -306,10 +319,10 @@
     </state>
     <state width="1398" height="475" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1613042789608" />
     <state width="1398" height="245" key="GridCell.Tab.0.right/0.23.1440.820@0.23.1440.820" timestamp="1611041941529" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1613611021323">
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1613613616071">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1613611021323" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1613613616071" />
     <state x="492" y="277" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1613611071175">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
