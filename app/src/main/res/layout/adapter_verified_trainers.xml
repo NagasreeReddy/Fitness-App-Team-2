@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sp"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cd_search_ride"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_4sdp"
+        app:cardBackgroundColor="#20ffffff"
+
+        app:cardCornerRadius="@dimen/_1sdp"
+        app:cardElevation="@dimen/_3sdp"
+        app:cardMaxElevation="@dimen/_3sdp">
+
+        <RelativeLayout
+
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgp"
+                android:layout_marginTop="15dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@mipmap/ic_profile"/>
+
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_13sdp"
+                android:layout_toRightOf="@+id/imgp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="Name"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:textSize="@dimen/_12sdp" />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                style="@style/customRatingBar"
+                android:layout_gravity="center"
+                android:paddingTop="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="1"
+                android:scaleY="1"
+                android:rating="4.5"
+                android:transformPivotX="0dp"
+                android:transformPivotY="0dp"
+                android:isIndicator="true"
+                android:max="5" />
+
+            <TextView
+                android:id="@+id/tvGender"
+                android:layout_toRightOf="@+id/imgp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvName"
+                android:layout_marginLeft="@dimen/_13sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="Gender"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:textSize="@dimen/_12sdp" />
+
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvGender"
+                android:layout_marginLeft="@dimen/_13sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Email"
+                android:textColor="#000"
+                android:textSize="@dimen/_15sdp"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:id="@+id/tvExperience"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvEmail"
+                android:layout_toRightOf="@+id/imgp"
+                android:layout_marginLeft="@dimen/_13sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="Experience"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="@dimen/_10sdp" />
+
+
+            <Button
+                android:id="@+id/btnInfo"
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/tvExperience"
+                android:layout_alignParentRight="true"
+                android:background="#8BC34A"
+                android:text="Book >>" />
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
