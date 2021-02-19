@@ -1,16 +1,16 @@
 package com.fitnessapp.activities;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.MenuItem;
-import android.view.View;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.MenuItem;
+import android.view.View;
 
 import com.fitnessapp.R;
 import com.google.android.material.navigation.NavigationView;
@@ -31,7 +31,7 @@ public class UserDashboardActivity extends AppCompatActivity {
         cdMyProfile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(UserDashboardActivity.this, EditProfileActivity.class);
+                Intent intent=new Intent(UserDashboardActivity.this,EditProfileActivity.class);
                 startActivity(intent);
 
             }
@@ -59,7 +59,7 @@ public class UserDashboardActivity extends AppCompatActivity {
 
     private void navigationView(){
         layout_drawer = (DrawerLayout)findViewById(R.id.layout_drawer);
-        t = new ActionBarDrawerToggle(this, layout_drawer, R.string.Open, R.string.Close);
+        t = new ActionBarDrawerToggle(this, layout_drawer,R.string.Open, R.string.Close);
         layout_drawer.addDrawerListener(t);
         t.syncState();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);

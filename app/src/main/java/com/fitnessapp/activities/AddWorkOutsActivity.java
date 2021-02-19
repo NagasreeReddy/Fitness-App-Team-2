@@ -1,5 +1,8 @@
 package com.fitnessapp.activities;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.Manifest;
 import android.app.Activity;
 import android.app.ProgressDialog;
@@ -15,9 +18,6 @@ import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.Spinner;
 import android.widget.Toast;
-
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 
 import com.fitnessapp.R;
 import com.fitnessapp.api.ApiService;

@@ -1,5 +1,7 @@
 package com.fitnessapp.activities;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
@@ -10,8 +12,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import androidx.appcompat.app.AppCompatActivity;
 
 import com.fitnessapp.R;
 import com.fitnessapp.Utils;
@@ -46,7 +46,7 @@ public class CustomerLoginPage extends AppCompatActivity {
         tvSignupHere.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(CustomerLoginPage.this, RegistrationActivity.class));
+                startActivity(new Intent(CustomerLoginPage.this,RegistrationActivity.class));
 
 
             }
