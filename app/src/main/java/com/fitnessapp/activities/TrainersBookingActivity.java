@@ -56,3 +56,39 @@ public class TrainersBookingActivity extends AppCompatActivity {
         progressDialog.setMessage("Loading....");
         progressDialog.show();
 
+        ApiService service = RetroClient.getRetrofitInstance().create(ApiService.class);
+        Call<List<MyBookingsPojo>> call = service.myrequests(session);
+        call.enqueue(new Callback<List<MyBookingsPojo>>() {
+            @Override
+            public void onResponse(Call<List<MyBookingsPojo>> call, Response<List<MyBookingsPojo>> response) {
+                progressDialog.dismiss();
+                if(response.body()==null){
+                    Toast.makeText(TrainersBookingActivity.this,"No data found",Toast.LENGTH_SHORT).show();
+                }if(response.body().size()==0){
+                    Toast.makeText(TrainersBookingActivity.this,"No data found",Toast.LENGTH_SHORT).show();
+                }else {
+                    myBookingsPojos=response.body();
+                    trainerBookingsAdapter =new TrainerBookingsAdapter(myBookingsPojos, TrainersBookingActivity.this);
+                    list_view.setAdapter(trainerBookingsAdapter);
+
+                }
+            }
+            @Override
+            public void onFailure(Call<List<MyBookingsPojo>> call, Throwable t) {
+                progressDialog.dismiss();
+                Toast.makeText(TrainersBookingActivity.this, "Something went wrong...Please try later!", Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                this.finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+}
