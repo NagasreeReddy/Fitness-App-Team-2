@@ -54,29 +54,7 @@ public class UserBookingsActivity extends AppCompatActivity {
         progressDialog.setMessage("Loading....");
         progressDialog.show();
 
-        ApiService service = RetroClient.getRetrofitInstance().create(ApiService.class);
-        Call<List<UserBookingsPojo>> call = service.mybookings(session);
-        call.enqueue(new Callback<List<UserBookingsPojo>>() {
-            @Override
-            public void onResponse(Call<List<UserBookingsPojo>> call, Response<List<UserBookingsPojo>> response) {
-                progressDialog.dismiss();
-                if (response.body() == null) {
-                    Toast.makeText(UserBookingsActivity.this, "No data found", Toast.LENGTH_SHORT).show();
-                } else {
-                    myBookingsPojos = response.body();
-                    userBookingsAdapter = new UserBookingsAdapter(myBookingsPojos, UserBookingsActivity.this);
-                    list_view.setAdapter(userBookingsAdapter);
 
-                }
-            }
-
-            @Override
-            public void onFailure(Call<List<UserBookingsPojo>> call, Throwable t) {
-                progressDialog.dismiss();
-                Toast.makeText(UserBookingsActivity.this, "Something went wrong...Please try later!", Toast.LENGTH_SHORT).show();
-            }
-        });
-    }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
