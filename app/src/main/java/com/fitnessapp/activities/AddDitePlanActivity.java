@@ -61,3 +61,37 @@ public class AddDitePlanActivity extends AppCompatActivity {
         progressDialog.setMessage("Loading....");
         progressDialog.show();
 
+        ApiService service = RetroClient.getRetrofitInstance().create(ApiService.class);
+        Call<ResponseData> call = service.adddiet(spinDitename.getSelectedItem().toString(),etDescription.getText().toString());
+        call.enqueue(new Callback<ResponseData>() {
+            @Override
+            public void onResponse(Call<ResponseData> call, Response<ResponseData> response) {
+                progressDialog.dismiss();
+                if (response.body().status.equals("true")) {
+                    Toast.makeText(AddDitePlanActivity.this, response.body().message, Toast.LENGTH_LONG).show();
+                    Intent intent=new Intent(AddDitePlanActivity.this, AdminDashBoardActivity.class);
+                    startActivity(intent);
+                    finish();
+
+                } else {
+                    Toast.makeText(AddDitePlanActivity.this, response.body().message, Toast.LENGTH_LONG).show();
+                }
+            }
+            @Override
+            public void onFailure(Call<ResponseData> call, Throwable t) {
+                progressDialog.dismiss();
+                Toast.makeText(AddDitePlanActivity.this, t.getMessage(), Toast.LENGTH_LONG).show();
+            }
+        });
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                this.finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+}
