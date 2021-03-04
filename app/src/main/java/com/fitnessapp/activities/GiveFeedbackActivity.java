@@ -81,38 +81,3 @@ public class GiveFeedbackActivity extends AppCompatActivity {
         pd= new ProgressDialog(GiveFeedbackActivity.this);
         pd.setTitle("Please wait,Data is being submit...");
         pd.show();
-        ApiService apiService = RetroClient.getRetrofitInstance().create(ApiService.class);
-        Call<ResponseData> call = apiService.addfeedback(session,getIntent().getStringExtra("name"),etMessage.getText().toString(),etName.getText().toString(), String.valueOf(ratingBar.getRating()));
-
-        call.enqueue(new Callback<ResponseData>() {
-            @Override
-            public void onResponse(Call<ResponseData> call, Response<ResponseData> response) {
-                pd.dismiss();
-                if (response.body().status.equals("true")) {
-                    Toast.makeText(GiveFeedbackActivity.this, "Feedback Given Succussfully", Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(GiveFeedbackActivity.this, UserBookingsActivity.class));
-                    finish();
-                } else {
-                    Toast.makeText(GiveFeedbackActivity.this, response.body().message, Toast.LENGTH_LONG).show();
-                }
-            }
-
-            @Override
-            public void onFailure(Call<ResponseData> call, Throwable t) {
-                pd.dismiss();
-                Toast.makeText(GiveFeedbackActivity.this, t.getMessage(), Toast.LENGTH_LONG).show();
-            }
-        });
-    }
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case android.R.id.home:
-                this.finish();
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
-        }
-    }
-
-}
