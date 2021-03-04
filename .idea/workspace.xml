@@ -31,70 +31,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="453ce25f-23de-4e6e-b76f-72cbb9a1ca2d" name="Default Changelist" comment="MyFeedBackActivity And Layout Edited">
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/AddWorkOutsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/AddWorkOutsActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/CreateTrainingActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/CreateTrainingActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/CustomerLoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/CustomerLoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/EditProfileActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/EditProfileActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/EditTrainingActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/EditTrainingActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/ForgotPasswordActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/ForgotPasswordActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/GetMyWorkoutActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/GetMyWorkoutActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/GiveFeedbackActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/GiveFeedbackActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/GuestMensWorkoutPlanActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/GuestMensWorkoutPlanActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/GuestUserActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/GuestUserActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/GuestWomensWorkoutPlanActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/GuestWomensWorkoutPlanActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/GuestWorkoutPlanActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/GuestWorkoutPlanActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/LoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/LoginActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/MensWorkoutDetailsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/MensWorkoutDetailsActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/MyFeedBackActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/MyFeedBackActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/RegistrationActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/RegistrationActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/SearchTrainerActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/SearchTrainerActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/SlashScreenActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/SlashScreenActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/TrainerDashboardActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/TrainerDashboardActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/TrainerEditProfileActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/TrainerEditProfileActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/TrainerRegistrationActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/TrainerRegistrationActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/TrainersBookingActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/TrainersBookingActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/TrainersInfoActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/TrainersInfoActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/UserBookingsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/UserBookingsActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/UserDashboardActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/UserDashboardActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/UserViewTrainingContent.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/UserViewTrainingContent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/WomensWorkoutDetailsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/WomensWorkoutDetailsActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/MainActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_add_work_o_uts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_add_work_o_uts.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_coustomer_login_page.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_coustomer_login_page.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_create_training.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_create_training.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_edit_profile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_edit_profile.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_edit_training.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_edit_training.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_forget_password.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_forget_password.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_get_my_workout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_get_my_workout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_give_feedback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_give_feedback.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_guest_mens_workout_plan.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_guest_mens_workout_plan.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_guest_user.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_guest_user.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_guest_womens_workout_plan.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_guest_womens_workout_plan.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_guest_workout_plan.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_guest_workout_plan.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_mens_workout_details.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_mens_workout_details.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_registration.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_registration.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_search_trainer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_search_trainer.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_slash_screen.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_slash_screen.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_trainer_booking.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_trainer_booking.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_trainer_dashboard.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_trainer_dashboard.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_trainer_edit_profile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_trainer_edit_profile.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_trainer_registration.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_trainer_registration.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_trainers_info.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_trainers_info.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_user_booking.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_user_booking.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_user_dashboard.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_user_dashboard.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_user_view_training_content.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_user_view_training_content.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_womens_workout_details.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_womens_workout_details.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/adapter_my_feedbacks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_my_feedbacks.xml" afterDir="false" />
+    <list default="true" id="453ce25f-23de-4e6e-b76f-72cbb9a1ca2d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_3a_XL_API_30" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Nexus_6_API_23" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -177,7 +122,7 @@
       <recent name="com.fitnessapp" />
     </key>
   </component>
-  <component name="RunManager" selected="Android App.Git_Hub_Commit-app">
+  <component name="RunManager" selected="Android App.Git_Hub_Commits-app">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -238,6 +183,57 @@
     </configuration>
     <configuration name="Git_Hub_Commit-app" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="Git_Hub_Commit-app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Git_Hub_Commits-app" type="AndroidRunConfigurationType" factoryName="Android App">
+      <module name="Git_Hub_Commits-app" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
       <option name="DEPLOY_AS_INSTANT" value="false" />
@@ -462,7 +458,105 @@
       <option name="project" value="LOCAL" />
       <updated>1613711068119</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="AddDitePlanActivity.java made some changes without the api call">
+      <created>1614899693063</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1614899693063</updated>
+    </task>
+    <task id="LOCAL-00018" summary="AddDitePlanActivity.java we have addes the API call">
+      <created>1614899727647</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1614899727647</updated>
+    </task>
+    <task id="LOCAL-00019" summary="GiveFeedbackActivity.java without Api calls">
+      <created>1614900037462</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1614900037462</updated>
+    </task>
+    <task id="LOCAL-00020" summary="GiveFeedbackActivity.java with api">
+      <created>1614900070193</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1614900070193</updated>
+    </task>
+    <task id="LOCAL-00021" summary="UserBookingsActivity.java without api">
+      <created>1614900130161</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1614900130161</updated>
+    </task>
+    <task id="LOCAL-00022" summary="MyFeedBackActivity.java with api connection linked">
+      <created>1614900177037</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1614900177037</updated>
+    </task>
+    <task id="LOCAL-00023" summary="TrainersBookingActivity.java no Api">
+      <created>1614900232514</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1614900232514</updated>
+    </task>
+    <task id="LOCAL-00024" summary="TrainersBookingActivity.java with api">
+      <created>1614900273622</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1614900273622</updated>
+    </task>
+    <task id="LOCAL-00025" summary="TrainersInfoActivity.java without api">
+      <created>1614900349893</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1614900349893</updated>
+    </task>
+    <task id="LOCAL-00026" summary="TrainersInfoActivity.java with api linkung to server">
+      <created>1614900392558</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1614900392558</updated>
+    </task>
+    <task id="LOCAL-00027" summary="UserBookingsActivity.java withot api">
+      <created>1614900447191</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1614900447191</updated>
+    </task>
+    <task id="LOCAL-00028" summary="UserBookingsActivity.java with Api">
+      <created>1614900485418</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1614900485418</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Made some changes Project.xml">
+      <created>1614900542413</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1614900542413</updated>
+    </task>
+    <task id="LOCAL-00030" summary="modules.xml made some changes">
+      <created>1614900580513</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1614900580513</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -498,12 +592,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Fixed Commit Problem" />
-    <MESSAGE value="Fixed Commit Problem final" />
-    <MESSAGE value="Get workout finished" />
-    <MESSAGE value="GiveFeedbackActivity And Layout Edited" />
-    <MESSAGE value="MyFeedBackActivity And Layout Edited" />
-    <MESSAGE value="AdminDashBoardActivity And Layout Updated" />
     <MESSAGE value="GetVerifiedTrainersActivity And Layout Edited" />
     <MESSAGE value="MyFeedBackActivity And Layout Updated" />
     <MESSAGE value="MensWorkoutPlanActivity And Layout updated and edited" />
@@ -513,7 +601,23 @@
     <MESSAGE value="WorkoutPlanActivity And Layout Edited and updated" />
     <MESSAGE value="ALL Adapters edited" />
     <MESSAGE value="Nav header Layout Updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="Nav header Layout Updated" />
+    <MESSAGE value="AddDitePlanActivity.java made some changes without the api call" />
+    <MESSAGE value="AddDitePlanActivity.java we have addes the API call" />
+    <MESSAGE value="GiveFeedbackActivity.java without Api calls" />
+    <MESSAGE value="GiveFeedbackActivity.java with api" />
+    <MESSAGE value="UserBookingsActivity.java without api" />
+    <MESSAGE value="MyFeedBackActivity.java with api connection linked" />
+    <MESSAGE value="TrainersBookingActivity.java no Api" />
+    <MESSAGE value="MyFeedBackActivity And Layout Edited" />
+    <MESSAGE value="TrainersBookingActivity.java with api" />
+    <MESSAGE value="TrainersInfoActivity.java without api" />
+    <MESSAGE value="TrainersInfoActivity.java with api linkung to server" />
+    <MESSAGE value="UserBookingsActivity.java withot api" />
+    <MESSAGE value="UserBookingsActivity.java with Api" />
+    <MESSAGE value="Made some changes Project.xml" />
+    <MESSAGE value="modules.xml made some changes" />
+    <MESSAGE value="workspace.xml make some changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="workspace.xml make some changes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="533" y="173" key="#com.intellij.ide.util.MemberChooser" timestamp="1613041698665">
@@ -524,10 +628,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1612843033948" />
-    <state x="235" y="0" width="1161" height="824" key="CommitChangelistDialog2" timestamp="1613711067113">
+    <state x="235" y="0" width="1161" height="824" key="CommitChangelistDialog2" timestamp="1614900621143">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="235" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1613711067113" />
+    <state x="235" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1614900621143" />
     <state x="251" y="0" width="967" height="728" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1613613581562" />
     <state x="282" y="0" width="1161" height="824" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1613675639974" />
     <state x="462" y="105" key="FileChooserDialogImpl" timestamp="1613608848673">
@@ -558,6 +662,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1613613616071" />
+    <state x="330" y="172" key="com.intellij.ide.util.TipDialog" timestamp="1614899219447">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="330" y="172" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1614899219447" />
     <state x="553" y="314" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1613675422407">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
