@@ -7,6 +7,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RatingBar;
@@ -47,9 +48,14 @@ public class TrainersInfoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_trainers_info);
 
 
+        getSupportActionBar().setTitle("Book Trainer");
+        getSupportActionBar().setHomeButtonEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+
         sharedPreferences = getSharedPreferences(Utils.SHREF, Context.MODE_PRIVATE);
          session = sharedPreferences.getString("user_name", "def-val");
-        Toast.makeText(this, ""+session+Date, Toast.LENGTH_SHORT).show();
+        //Toast.makeText(this, ""+session+Date, Toast.LENGTH_SHORT).show();
 
         Date c = Calendar.getInstance().getTime();
         SimpleDateFormat df = new SimpleDateFormat("dd-MMM-yyyy", Locale.getDefault());
@@ -76,6 +82,10 @@ public class TrainersInfoActivity extends AppCompatActivity {
         btnBook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if(spinTimings.getSelectedItem().toString().equals("Timings")){
+                    Toast.makeText(TrainersInfoActivity.this, "Please Choose timings", Toast.LENGTH_SHORT).show();
+                    return;
+                }
                 bookATrainer();
             }
         });
@@ -86,28 +96,4 @@ public class TrainersInfoActivity extends AppCompatActivity {
         pd= new ProgressDialog(TrainersInfoActivity.this);
         pd.setTitle("Please wait,Data is being submit...");
         pd.show();
-        ApiService apiService = RetroClient.getRetrofitInstance().create(ApiService.class);
-        Call<ResponseData> call = apiService.booktrainer(session,getIntent().getStringExtra("email"),etMessage.getText().toString(),Date,spinTimings.getSelectedItem().toString(),"Booked");
 
-        call.enqueue(new Callback<ResponseData>() {
-            @Override
-            public void onResponse(Call<ResponseData> call, Response<ResponseData> response) {
-                pd.dismiss();
-                if (response.body().status.equals("true")) {
-                    Toast.makeText(TrainersInfoActivity.this, "Trainer Booked Succussfully", Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(TrainersInfoActivity.this, GetVerifiedTrainersActivity.class));
-                    finish();
-                } else {
-                    Toast.makeText(TrainersInfoActivity.this, response.body().message, Toast.LENGTH_LONG).show();
-                }
-            }
-
-            @Override
-            public void onFailure(Call<ResponseData> call, Throwable t) {
-                pd.dismiss();
-                Toast.makeText(TrainersInfoActivity.this, t.getMessage(), Toast.LENGTH_LONG).show();
-            }
-        });
-    }
-
-}
