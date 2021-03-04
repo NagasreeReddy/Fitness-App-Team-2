@@ -37,7 +37,7 @@ public class MyFeedBackActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_trainer_booking);
+        setContentView(R.layout.activity_my_feeedback);
 
         getSupportActionBar().setTitle("Feedback");
         getSupportActionBar().setHomeButtonEnabled(true);
@@ -56,37 +56,3 @@ public class MyFeedBackActivity extends AppCompatActivity {
         progressDialog.setMessage("Loading....");
         progressDialog.show();
 
-        ApiService service = RetroClient.getRetrofitInstance().create(ApiService.class);
-        Call<List<MyFeedbackPojo>> call = service.myfeedbacks(session);
-        call.enqueue(new Callback<List<MyFeedbackPojo>>() {
-            @Override
-            public void onResponse(Call<List<MyFeedbackPojo>> call, Response<List<MyFeedbackPojo>> response) {
-                progressDialog.dismiss();
-                if(response.body()==null){
-                    Toast.makeText(MyFeedBackActivity.this,"No data found",Toast.LENGTH_SHORT).show();
-                }else {
-                    myFeedbackPojos=response.body();
-                    myFeedbacksAdapter =new MyFeedbacksAdapter(myFeedbackPojos, MyFeedBackActivity.this);
-                    list_view.setAdapter(myFeedbacksAdapter);
-
-                }
-            }
-            @Override
-            public void onFailure(Call<List<MyFeedbackPojo>> call, Throwable t) {
-                progressDialog.dismiss();
-                Toast.makeText(MyFeedBackActivity.this, "Something went wrong...Please try later!", Toast.LENGTH_SHORT).show();
-            }
-        });
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case android.R.id.home:
-                this.finish();
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
-        }
-    }
-}
