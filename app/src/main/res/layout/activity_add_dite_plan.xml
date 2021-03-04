@@ -23,3 +23,37 @@
         android:paddingBottom="@dimen/_10ssp" />
 
 
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/TextInputLayout"
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <Button
+        android:id="@+id/btnAddDite"
+        android:text="Add Dite"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_60ssp"
+        android:layout_marginRight="@dimen/_60ssp"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_38sdp"
+        android:background="@drawable/button_rounded3" />
+
+
+</LinearLayout>
