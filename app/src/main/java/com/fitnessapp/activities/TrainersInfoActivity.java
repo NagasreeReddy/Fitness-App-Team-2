@@ -96,4 +96,38 @@ public class TrainersInfoActivity extends AppCompatActivity {
         pd= new ProgressDialog(TrainersInfoActivity.this);
         pd.setTitle("Please wait,Data is being submit...");
         pd.show();
+        ApiService apiService = RetroClient.getRetrofitInstance().create(ApiService.class);
+        Call<ResponseData> call = apiService.booktrainer(session,getIntent().getStringExtra("email"),etMessage.getText().toString(),Date,spinTimings.getSelectedItem().toString(),"Booked");
 
+        call.enqueue(new Callback<ResponseData>() {
+            @Override
+            public void onResponse(Call<ResponseData> call, Response<ResponseData> response) {
+                pd.dismiss();
+                if (response.body().status.equals("true")) {
+                    Toast.makeText(TrainersInfoActivity.this, "Trainer Booked Succussfully", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(TrainersInfoActivity.this, GetVerifiedTrainersActivity.class));
+                    finish();
+                } else {
+                    Toast.makeText(TrainersInfoActivity.this, response.body().message, Toast.LENGTH_LONG).show();
+                }
+            }
+
+            @Override
+            public void onFailure(Call<ResponseData> call, Throwable t) {
+                pd.dismiss();
+                Toast.makeText(TrainersInfoActivity.this, t.getMessage(), Toast.LENGTH_LONG).show();
+            }
+        });
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                this.finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+
+}
