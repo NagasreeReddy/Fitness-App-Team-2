@@ -17,6 +17,17 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
+        Button btnAdmin=(Button)findViewById(R.id.btnAdmin);
+        btnAdmin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, AdminLoginPage.class));
+                //finish();
+
+            }
+        });
+
+
         Button btnCoustomer=(Button)findViewById(R.id.btnCoustomer);
         btnCoustomer.setOnClickListener(new View.OnClickListener() {
             @Override
