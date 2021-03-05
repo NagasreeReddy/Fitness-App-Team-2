@@ -8,7 +8,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Button;
-import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -16,7 +15,6 @@ import com.fitnessapp.R;
 import com.fitnessapp.activities.UserDashboardActivity;
 import com.fitnessapp.api.ApiService;
 import com.fitnessapp.api.RetroClient;
-import com.fitnessapp.models.MyFeedbackPojo;
 import com.fitnessapp.models.MyGoals;
 import com.fitnessapp.models.ResponseData;
 
