@@ -21,8 +21,10 @@ public class MainActivity extends AppCompatActivity {
         btnAdmin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //navigates to the adminloginpage
                 startActivity(new Intent(MainActivity.this, AdminLoginPage.class));
                 //finish();
+
 
             }
         });
@@ -32,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
         btnCoustomer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //If we click on customer the user will be navigated to customerloginpage
                 startActivity(new Intent(MainActivity.this, CustomerLoginPage.class));
                 //finish();
 

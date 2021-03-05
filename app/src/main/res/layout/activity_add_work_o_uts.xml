@@ -3,13 +3,31 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <Spinner
-        android:id="@+id/spinWorkoutType"
 
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/TextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Workout Type"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etWorkoutType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Spinner
+        android:visibility="gone"
+        android:id="@+id/spinWorkoutType"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_10sdp"
@@ -42,8 +60,20 @@
         android:background="@drawable/spinner_bottom_border"
         android:paddingBottom="@dimen/_10sdp" />
 
+    <Spinner
+        android:id="@+id/spinWorkoutGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:entries="@array/workoutGender"
+        android:background="@drawable/spinner_bottom_border"
+        android:paddingBottom="@dimen/_10sdp" />
+
 
     <RadioGroup
+        android:visibility="gone"
         android:id="@+id/radioSex"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

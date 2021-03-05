@@ -49,12 +49,12 @@ public class ForgotPasswordActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(),"Enter your Email", Toast.LENGTH_LONG).show();
                     return;
                 }
-                //submitdata();
+                forgotPassword();
             }
         });
 
     }
-    public  void submitdata()
+    public  void forgotPassword()
     {
         String email=et_email.getText().toString();
         ApiService apiService = RetroClient.getRetrofitInstance().create(ApiService.class);
@@ -63,7 +63,7 @@ public class ForgotPasswordActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<ResponseData> call, Response<ResponseData> response) {
                 if (response.body().message.equals("true")) {
-                    Toast.makeText(ForgotPasswordActivity.this, response.body().message, Toast.LENGTH_LONG).show();
+                    Toast.makeText(ForgotPasswordActivity.this, "Password sent to your email", Toast.LENGTH_LONG).show();
                     Log.i("msg", "" + response.body().message);
                     finish();
                 } else {
