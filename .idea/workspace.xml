@@ -33,29 +33,14 @@
   <component name="ChangeListManager">
     <list default="true" id="453ce25f-23de-4e6e-b76f-72cbb9a1ca2d" name="Default Changelist" comment="changes in user dashboard .xml">
       <change afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/AdminLoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/GetDitePlanActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/ScreenOne.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/TrainerForgotPasswordActivity.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/ViewMyGoalsActivity.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/adapters/GetDitePlanAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/adapters/MyGoalsAdapter.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/adapters/SearchTrainerAdapter.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/models/GetDitePlanPojo.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/models/MyGoals.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_call.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_diett.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_profile.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_trainer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_vtrainer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_workou.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_workout.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/mygoal.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_admin_login.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_screen_one.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_view_my_goals.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_get_diteplan.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_my_goals.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_search_trainers.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_call.png" afterDir="false" />
@@ -65,106 +50,52 @@
       <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_mygoals.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_mygoals.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_mygoals.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/AddDitePlanActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/AddDitePlanActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/AddWorkOutsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/AddWorkOutsActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/AdminDashBoardActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/AdminDashBoardActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/CreateTrainingActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/CreateTrainingActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/CustomerLoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/CustomerLoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/EditProfileActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/EditProfileActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/EditTrainingActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/EditTrainingActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/ForgotPasswordActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/ForgotPasswordActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/GetVerifiedTrainersActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/GetVerifiedTrainersActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/GiveFeedbackActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/GiveFeedbackActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/GuestMensWorkoutPlanActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/GuestMensWorkoutPlanActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/GuestWomensWorkoutPlanActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/GuestWomensWorkoutPlanActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/GuestWorkoutPlanActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/GuestWorkoutPlanActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/LoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/LoginActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/MensWorkoutPlanActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/MensWorkoutPlanActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/MyFeedBackActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/MyFeedBackActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/MyGoalActyvity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/MyGoalActyvity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/RegistrationActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/RegistrationActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/ScreenFour.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/ScreenFour.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/ScreenThree.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/ScreenThree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/ScreenTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/ScreenTwo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/SearchTrainerActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/SearchTrainerActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/SlashScreenActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/SlashScreenActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/TrainerDashboardActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/TrainerDashboardActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/TrainerEditProfileActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/TrainerEditProfileActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/TrainerLoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/TrainerLoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/TrainerRegistrationActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/TrainerRegistrationActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/TrainersBookingActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/TrainersBookingActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/TrainersInfoActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/TrainersInfoActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/UserBookingsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/UserBookingsActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/UserDashboardActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/UserDashboardActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/UserViewTrainingContent.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/UserViewTrainingContent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/VerifyTrainersActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/VerifyTrainersActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/WomensWorkoutDetailsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/WomensWorkoutDetailsActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/WomensWorkoutPlanActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/WomensWorkoutPlanActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/WorkoutPlanActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/WorkoutPlanActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/adapters/GetVerifiedTrainerAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/adapters/GetVerifiedTrainerAdapter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/adapters/GuestMensWorkoutPlanAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/adapters/GuestMensWorkoutPlanAdapter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/adapters/MensWorkoutPlanAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/adapters/MensWorkoutPlanAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/adapters/MyGoalsAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/adapters/MyGoalsAdapter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/adapters/TrainerBookingsAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/adapters/TrainerBookingsAdapter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/adapters/WomensWorkoutPlanAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/adapters/WomensWorkoutPlanAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/api/ApiService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/api/ApiService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/models/ResponseData.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/models/ResponseData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/models/TrainerEditProfilePojo.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/models/TrainerEditProfilePojo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/models/VerifyTrainerPojo.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/models/VerifyTrainerPojo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/spinner_bottom_border.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/spinner_bottom_border.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_add_dite_plan.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_add_dite_plan.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_add_work_o_uts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_add_work_o_uts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_admin_dashboard.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_admin_dashboard.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_coustomer_login_page.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_coustomer_login_page.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_create_training.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_create_training.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_dite_plan.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_dite_plan.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_edit_profile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_edit_profile.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_edit_training.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_edit_training.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_forget_password.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_forget_password.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_get_diteplan.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_get_diteplan.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_get_verified_trainers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_get_verified_trainers.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_give_feedback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_give_feedback.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_guest_mens_workout_plan.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_guest_mens_workout_plan.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_guest_user.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_guest_user.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_mens_workout_plan.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_mens_workout_plan.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_my_feeedback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_my_feeedback.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_my_goal_actyvity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_my_goal_actyvity.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_registration.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_registration.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_screen_four.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_screen_four.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_screen_three.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_screen_three.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_screen_two.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_screen_two.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_search_trainer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_search_trainer.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_slash_screen.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_slash_screen.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_trainer_booking.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_trainer_booking.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_trainer_dashboard.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_trainer_dashboard.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_trainer_edit_profile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_trainer_edit_profile.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_trainer_login_page.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_trainer_login_page.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_trainer_registration.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_trainer_registration.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_trainers_info.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_trainers_info.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_user_booking.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_user_booking.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_user_dashboard.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_user_dashboard.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_user_view_training_content.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_user_view_training_content.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_verify_trainers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_verify_trainers.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_womens_workout_details.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_womens_workout_details.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_womens_workout_plan.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_womens_workout_plan.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_workout_plan.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_workout_plan.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/adapter_getmy_workout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_getmy_workout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/adapter_guest_mens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_guest_mens.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/adapter_guest_women_workout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_guest_women_workout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/adapter_mens_workout_plan.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_mens_workout_plan.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/adapter_my_feedbacks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_my_feedbacks.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/adapter_trainer_bookings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_trainer_bookings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/adapter_user_bookings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_user_bookings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/adapter_verified_trainers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_verified_trainers.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/adapter_verify_trainer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_verify_trainer.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/adapter_womens_workout_plan.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_womens_workout_plan.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/nav_header.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/nav_header.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/admin_navigation_menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/admin_navigation_menu.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/trainer_navigation_menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/trainer_navigation_menu.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/user_navigation_menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/user_navigation_menu.xml" afterDir="false" />
@@ -174,7 +105,6 @@
       <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -764,7 +694,56 @@
       <option name="project" value="LOCAL" />
       <updated>1614922942816</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Drawables updated">
+      <created>1614924011969</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1614924011969</updated>
+    </task>
+    <task id="LOCAL-00038" summary="APIServices updated">
+      <created>1614924044890</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1614924044890</updated>
+    </task>
+    <task id="LOCAL-00039" summary="boilerplate updated">
+      <created>1614924159112</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1614924159112</updated>
+    </task>
+    <task id="LOCAL-00040" summary="ScreenOne.java updated">
+      <created>1614924278513</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1614924278513</updated>
+    </task>
+    <task id="LOCAL-00041" summary="GetDitePlanActivity.java updated">
+      <created>1614924327226</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1614924327226</updated>
+    </task>
+    <task id="LOCAL-00042" summary="activity_screen_one.xml updated">
+      <created>1614924570219</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1614924570219</updated>
+    </task>
+    <task id="LOCAL-00043" summary="adapter_get_diteplan.xml updated">
+      <created>1614924718966</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1614924718966</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -806,13 +785,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="VerifyTrainersActivity And Layout Updated" />
-    <MESSAGE value="WomensWorkoutPlanActivity And Layout Edited" />
-    <MESSAGE value="WorkoutPlanActivity And Layout Edited and updated" />
-    <MESSAGE value="ALL Adapters edited" />
-    <MESSAGE value="Nav header Layout Updated" />
-    <MESSAGE value="AddDitePlanActivity.java made some changes without the api call" />
-    <MESSAGE value="AddDitePlanActivity.java we have addes the API call" />
     <MESSAGE value="GiveFeedbackActivity.java without Api calls" />
     <MESSAGE value="GiveFeedbackActivity.java with api" />
     <MESSAGE value="UserBookingsActivity.java without api" />
@@ -831,7 +803,14 @@
     <MESSAGE value="ScreenTwo.java  is added" />
     <MESSAGE value="changes in TrainerEditProfileActivity.java" />
     <MESSAGE value="changes in user dashboard .xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="changes in user dashboard .xml" />
+    <MESSAGE value="Drawables updated" />
+    <MESSAGE value="APIServices updated" />
+    <MESSAGE value="boilerplate updated" />
+    <MESSAGE value="ScreenOne.java updated" />
+    <MESSAGE value="GetDitePlanActivity.java updated" />
+    <MESSAGE value="activity_screen_one.xml updated" />
+    <MESSAGE value="adapter_get_diteplan.xml updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="adapter_get_diteplan.xml updated" />
   </component>
   <component name="WindowStateProjectService">
     <state x="533" y="173" key="#com.intellij.ide.util.MemberChooser" timestamp="1613041698665">
@@ -842,11 +821,11 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1612843033948" />
-    <state x="251" y="0" width="1161" height="824" key="CommitChangelistDialog2" timestamp="1614923854954">
+    <state x="251" y="0" width="1161" height="824" key="CommitChangelistDialog2" timestamp="1614924718153">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="235" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1614923198422" />
-    <state x="251" y="0" width="967" height="728" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1614923854954" />
+    <state x="251" y="0" width="967" height="728" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1614924718153" />
     <state x="282" y="0" width="1161" height="824" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1613675639974" />
     <state x="462" y="105" key="FileChooserDialogImpl" timestamp="1613608848673">
       <screen x="0" y="0" width="1366" height="728" />
@@ -872,10 +851,10 @@
     </state>
     <state width="1398" height="475" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1613042789608" />
     <state width="1398" height="245" key="GridCell.Tab.0.right/0.23.1440.820@0.23.1440.820" timestamp="1611041941529" />
-    <state x="309" y="110" key="Vcs.Push.Dialog.v2" timestamp="1614922954837">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1614924725136">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1613613616071" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1614924725136" />
     <state x="309" y="110" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1614922954837" />
     <state x="330" y="172" key="com.intellij.ide.util.TipDialog" timestamp="1614899219447">
       <screen x="0" y="0" width="1280" height="680" />
