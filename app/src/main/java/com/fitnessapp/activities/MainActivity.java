@@ -21,8 +21,10 @@ public class MainActivity extends AppCompatActivity {
         btnAdmin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //navigates to the adminloginpage
                 startActivity(new Intent(MainActivity.this, AdminLoginPage.class));
                 //finish();
+
 
             }
         });
