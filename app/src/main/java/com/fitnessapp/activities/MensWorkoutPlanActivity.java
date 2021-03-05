@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.GridView;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -26,6 +27,7 @@ public class MensWorkoutPlanActivity extends AppCompatActivity {
     ProgressDialog progressDialog;
     List<MensWorkoutPojo> mensWorkoutPojos;
     MensWorkoutPlanAdapter mensWorkoutPlanAdapter;
+    GridView GVMensWorkout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +39,7 @@ public class MensWorkoutPlanActivity extends AppCompatActivity {
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        list_view=(ListView)findViewById(R.id.list_view);
+        GVMensWorkout=(GridView)findViewById(R.id.GVMensWorkout);
         mensWorkoutPojos= new ArrayList<>();
         getMensWorkoutplan();
     }
@@ -49,6 +51,8 @@ public class MensWorkoutPlanActivity extends AppCompatActivity {
 
         ApiService service = RetroClient.getRetrofitInstance().create(ApiService.class);
         Call<List<MensWorkoutPojo>> call = service.getmensworkouts();
+
+
         call.enqueue(new Callback<List<MensWorkoutPojo>>() {
             @Override
             public void onResponse(Call<List<MensWorkoutPojo>> call, Response<List<MensWorkoutPojo>> response) {
@@ -58,7 +62,7 @@ public class MensWorkoutPlanActivity extends AppCompatActivity {
                 }else {
                     mensWorkoutPojos=response.body();
                     mensWorkoutPlanAdapter =new MensWorkoutPlanAdapter(mensWorkoutPojos,MensWorkoutPlanActivity.this);
-                    list_view.setAdapter(mensWorkoutPlanAdapter);
+                    GVMensWorkout.setAdapter(mensWorkoutPlanAdapter);
 
                 }
             }
