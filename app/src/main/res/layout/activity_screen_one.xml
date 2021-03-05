@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".activities.ScreenOne">
+
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_13sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/graphiksemibold"
+        android:padding="@dimen/_6ssp"
+        android:text="How tall are you ?"
+        android:textColor="#000"
+        android:textSize="@dimen/_16sdp" />
+
+    <RadioGroup
+        android:id="@+id/radiotall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:background="#B4D6DA"
+        android:orientation="horizontal"
+        android:padding="@dimen/_7sdp">
+
+        <RadioButton
+            android:id="@+id/radioFt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ft" />
+
+        <RadioButton
+            android:id="@+id/radioInch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Inch" />
+
+    </RadioGroup>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/btnFeet"
+            android:layout_width="@dimen/_100ssp"
+            android:layout_height="@dimen/_30ssp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:background="@drawable/edittext_design"
+            android:hint="Feet"
+            android:paddingLeft="@dimen/_15ssp"
+            android:textAllCaps="false"
+            android:textColor="#000"
+            android:textSize="@dimen/_10ssp" />
+
+
+        <EditText
+            android:id="@+id/btnCm"
+            android:visibility="gone"
+            android:layout_width="@dimen/_100ssp"
+            android:layout_height="@dimen/_30ssp"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_design"
+            android:hint="Cm"
+            android:paddingLeft="@dimen/_15ssp"
+            android:textAllCaps="false"
+            android:textColor="#000"
+            android:textSize="@dimen/_10ssp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:text="Submit"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_80sdp"
+        android:layout_marginRight="@dimen/_80ssp"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_38sdp"
+        android:background="@drawable/button_rounded3" />
+
+
+
+</LinearLayout>
