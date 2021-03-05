@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".activities.ScreenOne">
+
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_13sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/graphiksemibold"
+        android:padding="@dimen/_6ssp"
+        android:text="Estimate your current body fat ?"
+        android:textColor="#000"
+        android:textSize="@dimen/_16sdp" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioWeight">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8ssp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio0"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/_8ssp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Athletes" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_workou" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8ssp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio01"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/_8ssp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fitness" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_workou" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8ssp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio02"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/_8ssp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Obese" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_workou" />
+        </LinearLayout>
+
+    </RadioGroup>
+
+
+
+
+
+
+    <!--
+        <EditText
+            android:id="@+id/etBodyFatPercentage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30ssp"
+            android:layout_margin="@dimen/_10ssp"
+            android:background="@drawable/edittext_design"
+            android:hint="Average Body Fat %"
+            android:paddingLeft="@dimen/_15ssp"
+            android:textAllCaps="false"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            android:textSize="@dimen/_10ssp" />
+
+
+        <EditText
+            android:id="@+id/etBodyfatWeight"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30ssp"
+            android:layout_margin="@dimen/_10ssp"
+            android:background="@drawable/edittext_design"
+            android:hint="Body Fat Weight"
+            android:paddingLeft="@dimen/_15ssp"
+            android:textAllCaps="false"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            android:textSize="@dimen/_10ssp" />-->
+
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_38sdp"
+        android:layout_marginLeft="@dimen/_80sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_80ssp"
+        android:background="@drawable/button_rounded3"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textColor="#000" />
+
+
+</LinearLayout>

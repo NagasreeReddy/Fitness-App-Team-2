@@ -20,7 +20,6 @@ import com.fitnessapp.R;
 import com.fitnessapp.Utils;
 import com.fitnessapp.api.ApiService;
 import com.fitnessapp.api.RetroClient;
-import com.fitnessapp.models.EditProfilePojo;
 import com.fitnessapp.models.ResponseData;
 import com.fitnessapp.models.TrainerEditProfilePojo;
 import com.google.android.material.textfield.TextInputEditText;
@@ -32,8 +31,8 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class  TrainerEditProfileActivity extends AppCompatActivity {
-    TextInputEditText etFirstName,etLastName,etEmail,etPassword,ertDateOfBirth,etExperience,etStatus;
+public class TrainerEditProfileActivity extends AppCompatActivity {
+    TextInputEditText etFirstName,etLastName,etEmail,etPassword,ertDateOfBirth,etExperience,etStatus,etPhone;
     ProgressDialog progressDialog;
     RadioGroup radioSex;
     RadioButton radioMale,radioFemale;
@@ -52,7 +51,7 @@ public class  TrainerEditProfileActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_trainer_edit_profile);
 
-        getSupportActionBar().setTitle("My Profile");
+        getSupportActionBar().setTitle("Profile");
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
@@ -66,8 +65,12 @@ public class  TrainerEditProfileActivity extends AppCompatActivity {
         etEmail=(TextInputEditText)findViewById(R.id.etEmail);
         etPassword=(TextInputEditText)findViewById(R.id.etPassword);
         etStatus=(TextInputEditText)findViewById(R.id.etStatus);
+        etPhone=(TextInputEditText)findViewById(R.id.etPhone);
+        radioSex.setEnabled(false);
+
         ratingBar=(RatingBar)findViewById(R.id.ratingBar);
         ertDateOfBirth.setFocusable(false);
+        ratingBar.setFocusable(false);
         ertDateOfBirth.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -110,6 +113,7 @@ public class  TrainerEditProfileActivity extends AppCompatActivity {
                 etExperience.setText(trainereditprofile.getExp());
                 ertDateOfBirth.setText(trainereditprofile.getDob());
                 etStatus.setText(trainereditprofile.getStatus());
+                etPhone.setText(trainereditprofile.getPhone());
                 ratingBar.setRating(Float.parseFloat(trainereditprofile.getRating()));
 
                  utype=trainereditprofile.getUtype();
@@ -133,13 +137,13 @@ public class  TrainerEditProfileActivity extends AppCompatActivity {
         String email = etEmail.getText().toString();
         String password = etPassword.getText().toString();
         String exp = etExperience.getText().toString();
-
+        String phone = etPhone.getText().toString();
         progressDialog = new ProgressDialog(TrainerEditProfileActivity.this);
         progressDialog.setMessage("Loading....");
         progressDialog.show();
 
         ApiService service = RetroClient.getRetrofitInstance().create(ApiService.class);
-        Call<ResponseData> call = service.updateTrainerProfile(fname,email,lname,exp,rating,status,utype,tid,password);
+        Call<ResponseData> call = service.updateTrainerProfile(fname,email,lname,ertDateOfBirth.getText().toString(),status,phone,password);
 
         call.enqueue(new Callback<ResponseData>() {
             @Override

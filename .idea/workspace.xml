@@ -31,7 +31,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="453ce25f-23de-4e6e-b76f-72cbb9a1ca2d" name="Default Changelist" comment="screen of .xml is added">
+    <list default="true" id="453ce25f-23de-4e6e-b76f-72cbb9a1ca2d" name="Default Changelist" comment="changes in TrainerEditProfileActivity.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -594,7 +594,28 @@
       <option name="project" value="LOCAL" />
       <updated>1614921281257</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="ScreenTwo.java  is added">
+      <created>1614921731827</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1614921731827</updated>
+    </task>
+    <task id="LOCAL-00034" summary="ScreenTwo.java  is added">
+      <created>1614921979715</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1614921979715</updated>
+    </task>
+    <task id="LOCAL-00035" summary="changes in TrainerEditProfileActivity.java">
+      <created>1614922531517</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1614922531517</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -636,8 +657,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="MyFeedBackActivity And Layout Updated" />
-    <MESSAGE value="MensWorkoutPlanActivity And Layout updated and edited" />
     <MESSAGE value="in TrainerLoginPage add functanality" />
     <MESSAGE value="VerifyTrainersActivity And Layout Updated" />
     <MESSAGE value="WomensWorkoutPlanActivity And Layout Edited" />
@@ -661,7 +680,9 @@
     <MESSAGE value="modules.xml made some changes" />
     <MESSAGE value="workspace.xml make some changes" />
     <MESSAGE value="screen of .xml is added" />
-    <option name="LAST_COMMIT_MESSAGE" value="screen of .xml is added" />
+    <MESSAGE value="ScreenTwo.java  is added" />
+    <MESSAGE value="changes in TrainerEditProfileActivity.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="changes in TrainerEditProfileActivity.java" />
   </component>
   <component name="WindowStateProjectService">
     <state x="533" y="173" key="#com.intellij.ide.util.MemberChooser" timestamp="1613041698665">
@@ -702,11 +723,11 @@
     </state>
     <state width="1398" height="475" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1613042789608" />
     <state width="1398" height="245" key="GridCell.Tab.0.right/0.23.1440.820@0.23.1440.820" timestamp="1611041941529" />
-    <state x="309" y="110" key="Vcs.Push.Dialog.v2" timestamp="1614921312579">
+    <state x="309" y="110" key="Vcs.Push.Dialog.v2" timestamp="1614922540336">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1613613616071" />
-    <state x="309" y="110" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1614921312579" />
+    <state x="309" y="110" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1614922540336" />
     <state x="330" y="172" key="com.intellij.ide.util.TipDialog" timestamp="1614899219447">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
