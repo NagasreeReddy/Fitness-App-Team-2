@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:gravity="center"
+    android:orientation="vertical"
     tools:context=".activities.ScreenOne">
 
 
@@ -23,7 +23,7 @@
 
 
     <RadioGroup
-        android:id="@+id/radioSex"
+        android:id="@+id/radioWeight"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/_10sdp"
@@ -34,15 +34,14 @@
         android:padding="@dimen/_7sdp">
 
         <RadioButton
-            android:id="@+id/radioMale"
+            android:id="@+id/radiolbs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:checked="true"
             android:text="Lbs" />
 
         <RadioButton
-            android:id="@+id/radioFemale"
+            android:id="@+id/radioKg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -70,7 +69,8 @@
             android:paddingLeft="@dimen/_15ssp"
             android:textAllCaps="false"
             android:textColor="#000"
-            android:textSize="@dimen/_10ssp" />
+            android:textSize="@dimen/_10ssp"
+            android:visibility="gone" />
 
 
         <EditText
@@ -83,21 +83,21 @@
             android:paddingLeft="@dimen/_15ssp"
             android:textAllCaps="false"
             android:textColor="#000"
-            android:textSize="@dimen/_10ssp" />
+            android:textSize="@dimen/_10ssp"
+            android:visibility="gone" />
     </LinearLayout>
 
     <Button
         android:id="@+id/btnSubmit"
-        android:text="Submit"
-        android:layout_marginTop="@dimen/_20sdp"
-        android:layout_marginLeft="@dimen/_80sdp"
-        android:layout_marginRight="@dimen/_80ssp"
-        android:textAllCaps="false"
-        android:textColor="#fff"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_38sdp"
-        android:background="@drawable/button_rounded3" />
-
+        android:layout_marginLeft="@dimen/_80sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_80ssp"
+        android:background="@drawable/button_rounded3"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textColor="#fff" />
 
 
 </LinearLayout>

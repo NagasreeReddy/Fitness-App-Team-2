@@ -1,10 +1,5 @@
 package com.fitnessapp.activities;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.MenuItem;
-import android.view.View;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,10 +7,15 @@ import androidx.cardview.widget.CardView;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.MenuItem;
+import android.view.View;
+
 import com.fitnessapp.R;
 import com.google.android.material.navigation.NavigationView;
 
-public class UserDashboardActivity extends AppCompatActivity {
+public class  UserDashboardActivity extends AppCompatActivity {
     private ActionBarDrawerToggle t;
     private NavigationView navigation_view;
     private DrawerLayout layout_drawer;
@@ -31,7 +31,7 @@ public class UserDashboardActivity extends AppCompatActivity {
         cdMyProfile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(UserDashboardActivity.this, EditProfileActivity.class);
+                Intent intent=new Intent(UserDashboardActivity.this,EditProfileActivity.class);
                 startActivity(intent);
 
             }
@@ -41,7 +41,7 @@ public class UserDashboardActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent intent=new Intent(UserDashboardActivity.this, WorkoutPlanActivity.class);
+                Intent intent=new Intent(UserDashboardActivity.this,WorkoutPlanActivity.class);
                 startActivity(intent);
 
             }
@@ -50,7 +50,7 @@ public class UserDashboardActivity extends AppCompatActivity {
         cdTrainers.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(UserDashboardActivity.this, GetVerifiedTrainersActivity.class);
+                Intent intent=new Intent(UserDashboardActivity.this,GetVerifiedTrainersActivity.class);
                 startActivity(intent);
 
             }
@@ -70,7 +70,7 @@ public class UserDashboardActivity extends AppCompatActivity {
         cdMyGoal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(UserDashboardActivity.this, MyGoalActyvity.class);
+                Intent intent=new Intent(UserDashboardActivity.this,MyGoalActyvity.class);
                 startActivity(intent);
 
             }
@@ -79,7 +79,7 @@ public class UserDashboardActivity extends AppCompatActivity {
 
     private void navigationView(){
         layout_drawer = (DrawerLayout)findViewById(R.id.layout_drawer);
-        t = new ActionBarDrawerToggle(this, layout_drawer, R.string.Open, R.string.Close);
+        t = new ActionBarDrawerToggle(this, layout_drawer,R.string.Open, R.string.Close);
         layout_drawer.addDrawerListener(t);
         t.syncState();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -102,6 +102,11 @@ public class UserDashboardActivity extends AppCompatActivity {
                     case R.id.view_training_content:
                         Intent view_jobs=new Intent(getApplicationContext(), UserViewTrainingContent.class);
                         startActivity(view_jobs);
+                        break;
+
+                    case R.id.my_goals:
+                        Intent my_goals=new Intent(getApplicationContext(), ViewMyGoalsActivity.class);
+                        startActivity(my_goals);
                         break;
 
 

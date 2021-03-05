@@ -20,6 +20,7 @@ import com.fitnessapp.R;
 import com.fitnessapp.Utils;
 import com.fitnessapp.api.ApiService;
 import com.fitnessapp.api.RetroClient;
+import com.fitnessapp.models.EditProfilePojo;
 import com.fitnessapp.models.ResponseData;
 import com.fitnessapp.models.TrainerEditProfilePojo;
 import com.google.android.material.textfield.TextInputEditText;
@@ -31,7 +32,7 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class TrainerEditProfileActivity extends AppCompatActivity {
+public class  TrainerEditProfileActivity extends AppCompatActivity {
     TextInputEditText etFirstName,etLastName,etEmail,etPassword,ertDateOfBirth,etExperience,etStatus,etPhone;
     ProgressDialog progressDialog;
     RadioGroup radioSex;

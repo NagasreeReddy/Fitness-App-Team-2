@@ -30,7 +30,17 @@
                 android:src="@mipmap/ic_profile" />
 
 
-
+            <TextView
+                android:id="@+id/tvGetFittet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="36dp"
+                android:layout_marginTop="@dimen/_25ssp"
+                android:layout_toRightOf="@+id/imgp"
+                android:text="Get Fitter"
+                android:textColor="#fff"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold" />
 
 
         </RelativeLayout>
@@ -62,7 +72,16 @@
                 android:src="@mipmap/ic_profile" />
 
 
-
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="36dp"
+                android:layout_marginTop="@dimen/_25ssp"
+                android:layout_toRightOf="@+id/imgpp"
+                android:text="Gain Muscle"
+                android:textColor="#fff"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold" />
 
 
         </RelativeLayout>
@@ -95,7 +114,16 @@
                 android:src="@mipmap/ic_profile" />
 
 
-
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="36dp"
+                android:layout_marginTop="@dimen/_25ssp"
+                android:layout_toRightOf="@+id/imgppp"
+                android:text="Lose Weight"
+                android:textColor="#fff"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold" />
 
 
         </RelativeLayout>

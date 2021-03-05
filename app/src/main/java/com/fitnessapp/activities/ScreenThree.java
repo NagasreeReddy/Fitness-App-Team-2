@@ -1,14 +1,19 @@
 package com.fitnessapp.activities;
 
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.annotation.SuppressLint;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Toast;
-
-import androidx.appcompat.app.AppCompatActivity;
 
 import com.fitnessapp.R;
 
@@ -77,7 +82,7 @@ public class ScreenThree extends AppCompatActivity {
                     return;
                 }
 
-                Intent intent=new Intent(ScreenThree.this, ScreenFour.class);
+                Intent intent=new Intent(ScreenThree.this,ScreenFour.class);
                 intent.putExtra("currentbodyfat",cbodyfat);
                 intent.putExtra("height", getIntent().getStringExtra("height"));
                 intent.putExtra("weight", getIntent().getStringExtra("weight"));

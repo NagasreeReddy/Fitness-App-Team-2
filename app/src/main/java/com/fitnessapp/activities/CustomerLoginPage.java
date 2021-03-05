@@ -76,7 +76,7 @@ public class CustomerLoginPage extends AppCompatActivity {
                 }
                 else {
                     loginUser();
-                    // startActivity(new Intent(CustomerLoginPage.this, UserDashboardActivity.class));
+                   // startActivity(new Intent(CustomerLoginPage.this, UserDashboardActivity.class));
 
 
                 }
@@ -88,8 +88,10 @@ public class CustomerLoginPage extends AppCompatActivity {
         pd= new ProgressDialog(CustomerLoginPage.this);
         pd.setTitle("Please wait,Data is being submit...");
         pd.show();
+
         ApiService apiService = RetroClient.getRetrofitInstance().create(ApiService.class);
         Call<ResponseData> call = apiService.userLogin(editTextEmail.getText().toString(),editTextPassword.getText().toString());
+
 
         call.enqueue(new Callback<ResponseData>() {
             @Override

@@ -3,6 +3,7 @@ package com.fitnessapp.activities;
 import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.GridView;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -24,6 +25,7 @@ import retrofit2.Response;
 
 public class GuestMensWorkoutPlanActivity extends AppCompatActivity {
     ListView list_view;
+    GridView GVMensWorkout;
     ProgressDialog progressDialog;
     List<MensWorkoutPojo> mensWorkoutPojos;
     GuestMensWorkoutPlanAdapter guestMensWorkoutPlanAdapter;
@@ -39,6 +41,7 @@ public class GuestMensWorkoutPlanActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         list_view=(ListView)findViewById(R.id.list_view);
+        GVMensWorkout=(GridView)findViewById(R.id.GVMensWorkout);
         mensWorkoutPojos= new ArrayList<>();
         getMensWorkoutplan();
     }
@@ -49,7 +52,7 @@ public class GuestMensWorkoutPlanActivity extends AppCompatActivity {
         progressDialog.show();
 
         ApiService service = RetroClient.getRetrofitInstance().create(ApiService.class);
-        Call<List<MensWorkoutPojo>> call = service.getmensworkouts();
+        Call<List<MensWorkoutPojo>> call = service.guestmens();
         call.enqueue(new Callback<List<MensWorkoutPojo>>() {
             @Override
             public void onResponse(Call<List<MensWorkoutPojo>> call, Response<List<MensWorkoutPojo>> response) {
@@ -59,7 +62,7 @@ public class GuestMensWorkoutPlanActivity extends AppCompatActivity {
                 }else {
                     mensWorkoutPojos=response.body();
                     guestMensWorkoutPlanAdapter =new GuestMensWorkoutPlanAdapter(mensWorkoutPojos, GuestMensWorkoutPlanActivity.this);
-                    list_view.setAdapter(guestMensWorkoutPlanAdapter);
+                    GVMensWorkout.setAdapter(guestMensWorkoutPlanAdapter);
 
                 }
             }

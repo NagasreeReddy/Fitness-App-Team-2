@@ -49,7 +49,7 @@ public class EditProfileActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit_profile);
 
-        getSupportActionBar().setTitle("My Profile");
+        getSupportActionBar().setTitle("Profile");
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
@@ -63,8 +63,11 @@ public class EditProfileActivity extends AppCompatActivity {
         etPassword=(TextInputEditText)findViewById(R.id.etPassword);
 
         etEmail.setEnabled(false);
+        radioSex.setEnabled(false);
 
         ertDateOfBirth.setFocusable(false);
+        ertDateOfBirth.setEnabled(false);
+
         ertDateOfBirth.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -93,6 +96,8 @@ public class EditProfileActivity extends AppCompatActivity {
 
         ApiService service = RetroClient.getRetrofitInstance().create(ApiService.class);
         Call<List<EditProfilePojo>> call = service.editProfile(session);
+
+
         call.enqueue(new Callback<List<EditProfilePojo>>() {
             @Override
             public void onResponse(Call<List<EditProfilePojo>> call, Response<List<EditProfilePojo>> response) {
@@ -134,7 +139,7 @@ public class EditProfileActivity extends AppCompatActivity {
         progressDialog.show();
 
         ApiService service = RetroClient.getRetrofitInstance().create(ApiService.class);
-        Call<ResponseData> call = service.updateProfile(fname,email,lname,utype,password);
+        Call<ResponseData> call = service.updateProfile(fname,email,lname,password);
 
         call.enqueue(new Callback<ResponseData>() {
             @Override

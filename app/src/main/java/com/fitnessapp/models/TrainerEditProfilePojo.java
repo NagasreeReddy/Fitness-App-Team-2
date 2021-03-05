@@ -34,6 +34,9 @@ public class TrainerEditProfilePojo {
     @SerializedName("tid")
     public String tid;
 
+    @SerializedName("phone")
+    private String phone;
+
     public String getStatus() {
         return status;
     }
@@ -123,5 +126,13 @@ public class TrainerEditProfilePojo {
 
     public void setTid(String tid) {
         this.tid = tid;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 }

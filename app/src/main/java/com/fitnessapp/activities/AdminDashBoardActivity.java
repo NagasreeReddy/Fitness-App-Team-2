@@ -19,7 +19,7 @@ public class AdminDashBoardActivity extends AppCompatActivity {
     private ActionBarDrawerToggle t;
     private NavigationView navigation_view;
     private DrawerLayout layout_drawer;
-    CardView cdVerifyTrainer, cdAddworkouts;
+    CardView cdVerifyTrainer, cdAddworkouts,cdAddDitePlan;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +41,17 @@ public class AdminDashBoardActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent verifytrainer = new Intent(getApplicationContext(), AddWorkOutsActivity.class);
+                startActivity(verifytrainer);
+
+            }
+        });
+
+
+        cdAddDitePlan = (CardView) findViewById(R.id.cdAddDitePlan);
+        cdAddDitePlan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent verifytrainer = new Intent(getApplicationContext(), AddDitePlanActivity.class);
                 startActivity(verifytrainer);
 
             }

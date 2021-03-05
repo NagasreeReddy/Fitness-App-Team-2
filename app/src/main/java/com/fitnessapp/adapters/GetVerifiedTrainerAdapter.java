@@ -3,11 +3,13 @@ package com.fitnessapp.adapters;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -64,13 +66,22 @@ public class GetVerifiedTrainerAdapter extends BaseAdapter {
         TextView tvEmail = (TextView) obj2.findViewById(R.id.tvEmail);
         tvEmail.setText(" Email  :" + verifytrainer.get(pos).getEmail());
 
+
         TextView tvExperience = (TextView) obj2.findViewById(R.id.tvExperience);
         tvExperience.setText(" Experience  :" + verifytrainer.get(pos).getExp());
 
         RatingBar ratingBar=(RatingBar)obj2.findViewById(R.id.ratingBar);
         ratingBar.setRating(Float.parseFloat(verifytrainer.get(pos).getRating()));
 
-
+        //verifytrainer.get(pos).getPhone().toString()
+        ImageView img_call=(ImageView)obj2.findViewById(R.id.img_call);
+        img_call.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + verifytrainer.get(pos).getPhone().toString()));
+                cnt.startActivity(intent);
+            }
+        });
 
         Button btnInfo = (Button) obj2.findViewById(R.id.btnInfo);
         btnInfo.setOnClickListener(new View.OnClickListener() {

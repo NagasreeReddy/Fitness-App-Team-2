@@ -7,10 +7,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.cardview.widget.CardView;
 
+import com.bumptech.glide.Glide;
 import com.fitnessapp.R;
 import com.fitnessapp.activities.MensWorkoutDetailsActivity;
 import com.fitnessapp.models.MensWorkoutPojo;
@@ -47,7 +49,7 @@ public class GuestMensWorkoutPlanAdapter extends BaseAdapter {
         LayoutInflater obj1 = (LayoutInflater) cnt.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View obj2 = obj1.inflate(R.layout.adapter_guest_mens, null);
 
-        TextView tvWorkoutLevel = (TextView) obj2.findViewById(R.id.tvWorkoutLevel);
+        /*TextView tvWorkoutLevel = (TextView) obj2.findViewById(R.id.tvWorkoutLevel);
         tvWorkoutLevel.setText(mensWorkoutPojos.get(pos).getLevel());
 
         TextView tvWorkoutName = (TextView) obj2.findViewById(R.id.tvWorkoutName);
@@ -70,6 +72,29 @@ public class GuestMensWorkoutPlanAdapter extends BaseAdapter {
                 intent.putExtra("time",mensWorkoutPojos.get(pos).getTim());
                 intent.putExtra("url",mensWorkoutPojos.get(pos).getVlink());
                 cnt.startActivity(intent);
+            }
+        });*/
+
+        ImageView imageview=(ImageView)obj2.findViewById(R.id.imageview);
+        Glide.with(cnt).load(URL+mensWorkoutPojos.get(pos).getPhoto()).into(imageview);
+
+        TextView tvWorkoutname = (TextView) obj2.findViewById(R.id.tvWorkoutname);
+        tvWorkoutname.setText(mensWorkoutPojos.get(pos).getWname());
+
+        CardView cvWorkout=(CardView)obj2.findViewById(R.id.cvWorkout);
+        cvWorkout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+
+                Intent intent=new Intent(cnt, MensWorkoutDetailsActivity.class);
+                intent.putExtra("image",mensWorkoutPojos.get(pos).getPhoto());
+                intent.putExtra("wname",mensWorkoutPojos.get(pos).getWname());
+                intent.putExtra("desc",mensWorkoutPojos.get(pos).getDes());
+                intent.putExtra("time",mensWorkoutPojos.get(pos).getTim());
+                intent.putExtra("url",mensWorkoutPojos.get(pos).getVlink());
+                cnt.startActivity(intent);
+
             }
         });
 

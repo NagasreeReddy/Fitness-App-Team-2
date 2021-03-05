@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.fitnessapp">
 
+    <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
@@ -15,8 +16,18 @@
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.GiveFeedbackActivity"></activity>
+        <activity android:name=".activities.ViewMyGoalsActivity"></activity>
+        <activity android:name=".activities.ScreenFour" />
+        <activity android:name=".activities.ScreenThree" />
+        <activity android:name=".activities.ScreenTwo" />
+        <activity android:name=".activities.ScreenOne" />
+        <activity android:name=".activities.MyGoalActyvity" />
+        <activity android:name=".activities.AddDitePlanActivity" />
+        <activity android:name=".activities.GiveFeedbackActivity" />
+        <activity android:name=".activities.TrainerForgotPasswordActivity" />
+        <activity android:name=".activities.GetDitePlanActivity" />
         <activity android:name=".activities.TrainersInfoActivity" />
+        <activity android:name=".activities.AdminLoginPage" />
         <activity android:name=".activities.TrainersBookingActivity" />
         <activity android:name=".activities.MyFeedBackActivity" />
         <activity android:name=".activities.UserBookingsActivity" />
@@ -34,7 +45,6 @@
         <activity android:name=".activities.TrainerLoginPage" />
         <activity android:name=".activities.CustomerLoginPage" />
         <activity android:name=".activities.MainActivity" />
-        <activity android:name=".activities.GuestUserActivity" />
         <activity android:name=".activities.ForgotPasswordActivity" />
         <activity android:name=".activities.AddWorkOutsActivity" />
         <activity android:name=".activities.TrainerEditProfileActivity" />

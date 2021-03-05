@@ -2,7 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item android:id="@+id/myprofile"
-        android:title="My Profile"/>
+        android:title="Profile"/>
 
     <item android:id="@+id/create_training"
         android:visible="false"

@@ -30,7 +30,7 @@ import retrofit2.Response;
 public class TrainerRegistrationActivity extends AppCompatActivity {
     Button btn_signin;
     TextView tv_already_have_acc;
-    TextInputEditText etFirstName,etLastName,etEmail,etPassword,ertDateOfBirth,etExperience;
+    TextInputEditText etFirstName,etLastName,etEmail,etPassword,ertDateOfBirth,etExperience,etPhone;
     ProgressDialog progressDialog;
     RadioGroup radioSex;
     RadioButton radioMale,radioFemale;
@@ -55,6 +55,8 @@ public class TrainerRegistrationActivity extends AppCompatActivity {
         radioFemale=(RadioButton)findViewById(R.id.radioFemale);
         etEmail=(TextInputEditText)findViewById(R.id.etEmail);
         etPassword=(TextInputEditText)findViewById(R.id.etPassword);
+        etPhone=(TextInputEditText)findViewById(R.id.etPhone);
+
         ertDateOfBirth.setFocusable(false);
         ertDateOfBirth.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -108,13 +110,13 @@ public class TrainerRegistrationActivity extends AppCompatActivity {
         String password = etPassword.getText().toString();
         String experience = etExperience.getText().toString();
         String dob = ertDateOfBirth.getText().toString();
-
+        String phone = etPhone.getText().toString();
         progressDialog = new ProgressDialog(TrainerRegistrationActivity.this);
         progressDialog.setMessage("Loading....");
         progressDialog.show();
 
         ApiService service = RetroClient.getRetrofitInstance().create(ApiService.class);
-        Call<ResponseData> call = service.trainerRegistration(fname,lname, email,password,experience,gender,dob,"Trainer");
+        Call<ResponseData> call = service.trainerRegistration(fname,lname, email,password,experience,gender,dob,phone,"Trainer");
         call.enqueue(new Callback<ResponseData>() {
             @Override
             public void onResponse(Call<ResponseData> call, Response<ResponseData> response) {

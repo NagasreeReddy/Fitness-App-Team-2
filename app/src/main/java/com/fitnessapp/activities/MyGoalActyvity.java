@@ -1,12 +1,12 @@
 package com.fitnessapp.activities;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
 
 import com.fitnessapp.R;
 
@@ -26,7 +26,9 @@ public class MyGoalActyvity extends AppCompatActivity {
         cdGetFittet.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MyGoalActyvity.this, ScreenOne.class));
+                Intent i = new Intent(MyGoalActyvity.this, ScreenOne.class);
+                i.putExtra("Goalname", "Get Fitter");
+                startActivity(i);
                 finish();
 
             }
@@ -35,7 +37,10 @@ public class MyGoalActyvity extends AppCompatActivity {
         cdLoseWait.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MyGoalActyvity.this, ScreenOne.class));
+
+                Intent i = new Intent(MyGoalActyvity.this, ScreenOne.class);
+                i.putExtra("Goalname", "Gain Muscle");
+                startActivity(i);
                 finish();
 
             }
@@ -44,7 +49,9 @@ public class MyGoalActyvity extends AppCompatActivity {
         cdGainMuscle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MyGoalActyvity.this, ScreenOne.class));
+                Intent i = new Intent(MyGoalActyvity.this, ScreenOne.class);
+                i.putExtra("Goalname", "Lose Weight");
+                startActivity(i);
                 finish();
             }
         });

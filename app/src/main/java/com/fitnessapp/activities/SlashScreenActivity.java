@@ -29,8 +29,8 @@ public class SlashScreenActivity extends AppCompatActivity {
                     e.printStackTrace();
                 }
                 finally{
-                    Intent intentg= new Intent(SlashScreenActivity.this, MainActivity.class);
-                    startActivity(intentg);
+                    Intent i= new Intent(SlashScreenActivity.this, MainActivity.class);
+                    startActivity(i);
                     finish();
 
                 }

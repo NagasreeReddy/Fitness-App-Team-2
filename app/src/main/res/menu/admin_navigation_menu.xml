@@ -3,7 +3,7 @@
 
     <item android:id="@+id/myprofile"
         android:visible="false"
-        android:title="My Profile"/>
+        android:title="Profile"/>
 
     <item android:id="@+id/create_training"
         android:visible="false"

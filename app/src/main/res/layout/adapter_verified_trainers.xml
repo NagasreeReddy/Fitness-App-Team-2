@@ -1,8 +1,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/sp"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="8dp">
 
@@ -12,23 +11,21 @@
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/_4sdp"
         app:cardBackgroundColor="#20ffffff"
-
         app:cardCornerRadius="@dimen/_1sdp"
         app:cardElevation="@dimen/_3sdp"
         app:cardMaxElevation="@dimen/_3sdp">
 
         <RelativeLayout
-
-            android:layout_margin="10dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
 
             <ImageView
                 android:id="@+id/imgp"
-                android:layout_marginTop="15dp"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
-                android:src="@mipmap/ic_profile"/>
+                android:layout_marginTop="15dp"
+                android:src="@mipmap/ic_profile" />
 
 
             <TextView
@@ -36,42 +33,42 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/_13sdp"
-                android:layout_toRightOf="@+id/imgp"
                 android:layout_marginTop="@dimen/_15sdp"
+                android:layout_toRightOf="@+id/imgp"
                 android:text="Name"
-                android:textStyle="bold"
                 android:textColor="#fff"
-                android:textSize="@dimen/_12sdp" />
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
 
             <RatingBar
                 android:id="@+id/ratingBar"
                 style="@style/customRatingBar"
-                android:layout_gravity="center"
-                android:paddingTop="@dimen/_15sdp"
-                android:layout_marginRight="@dimen/_15sdp"
-                android:layout_alignParentRight="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:isIndicator="true"
+                android:max="5"
+                android:paddingTop="@dimen/_15sdp"
+                android:rating="4.5"
                 android:scaleX="1"
                 android:scaleY="1"
-                android:rating="4.5"
                 android:transformPivotX="0dp"
-                android:transformPivotY="0dp"
-                android:isIndicator="true"
-                android:max="5" />
+                android:transformPivotY="0dp" />
 
             <TextView
                 android:id="@+id/tvGender"
-                android:layout_toRightOf="@+id/imgp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tvName"
                 android:layout_marginLeft="@dimen/_13sdp"
                 android:layout_marginTop="@dimen/_5sdp"
+                android:layout_toRightOf="@+id/imgp"
                 android:text="Gender"
-                android:textStyle="bold"
                 android:textColor="#fff"
-                android:textSize="@dimen/_12sdp" />
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
 
 
             <TextView
@@ -81,7 +78,21 @@
                 android:layout_below="@+id/tvGender"
                 android:layout_marginLeft="@dimen/_13sdp"
                 android:layout_marginTop="@dimen/_10sdp"
+                android:layout_toRightOf="@+id/imgp"
                 android:text="Email"
+                android:textColor="#fff"
+                android:textSize="@dimen/_15sdp" />
+
+
+            <TextView
+                android:id="@+id/tvPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvEmail"
+                android:layout_marginLeft="@dimen/_13sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_toRightOf="@+id/imgp"
+                android:text="Phone No"
                 android:textColor="#000"
                 android:textSize="@dimen/_15sdp"
                 android:visibility="gone" />
@@ -91,15 +102,24 @@
                 android:id="@+id/tvExperience"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/tvEmail"
-                android:layout_toRightOf="@+id/imgp"
+                android:layout_below="@+id/tvPhone"
                 android:layout_marginLeft="@dimen/_13sdp"
                 android:layout_marginTop="@dimen/_5sdp"
+                android:layout_toRightOf="@+id/imgp"
                 android:text="Experience"
                 android:textColor="#fff"
-                android:textStyle="bold"
-                android:textSize="@dimen/_10sdp" />
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="bold" />
 
+            <ImageView
+                android:id="@+id/img_call"
+                android:src="@drawable/ic_call"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toLeftOf="@+id/btnInfo"
+                android:layout_below="@+id/tvExperience"
+                android:layout_width="@dimen/_30ssp"
+                android:layout_height="@dimen/_30ssp"/>
 
             <Button
                 android:id="@+id/btnInfo"

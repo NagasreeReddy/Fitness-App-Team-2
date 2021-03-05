@@ -1,18 +1,22 @@
 package com.fitnessapp.adapters;
 
+import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.Button;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.fitnessapp.R;
 import com.fitnessapp.activities.AdminDashBoardActivity;
+import com.fitnessapp.activities.TrainersBookingActivity;
 import com.fitnessapp.api.ApiService;
 import com.fitnessapp.api.RetroClient;
 import com.fitnessapp.models.MyBookingsPojo;
@@ -69,11 +73,11 @@ public class TrainerBookingsAdapter extends BaseAdapter {
         TextView tvStates = (TextView) obj2.findViewById(R.id.tvStates);
         tvStates.setText("Status  :" + myBookingsPojos.get(pos).getStatus());
 
-        Button btnAccept = (Button) obj2.findViewById(R.id.btnAccept);
+       /* Button btnAccept = (Button) obj2.findViewById(R.id.btnAccept);
         btnAccept.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //UpdateTrainerStatus(myBookingsPojos.get(pos).getTid(),myBookingsPojos.get(pos).getVerify());
+                //UpdateTrainerStatus(myBookingsPojos.get(pos).getBid(),myBookingsPojos.get(pos).getVerify());
 
             }
         });
@@ -84,22 +88,45 @@ public class TrainerBookingsAdapter extends BaseAdapter {
             @Override
             public void onClick(View view) {
 
-                //UpdateTrainerStatus(myBookingsPojos.get(pos).getTid(),myBookingsPojos.get(pos).getVerify());
+               // UpdateTrainerStatus(myBookingsPojos.get(pos).getTid(),myBookingsPojos.get(pos).getVerify());
+
+            }
+        });*/
+
+        Spinner spinUpdateStatus=(Spinner)obj2.findViewById(R.id.spinUpdateStatus);
+        spinUpdateStatus.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener()
+        {
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id)
+            {
+                String selectedItem = parent.getItemAtPosition(position).toString();
+                if(selectedItem.equals("Update Status"))
+                {
+
+                }
+                else if(selectedItem.equals("Confirmed")){
+                    UpdateBookingStatus(myBookingsPojos.get(pos).getBid(),"Confirmed");
+                }
+
+                else if(selectedItem.equals("Denied")){
+                    UpdateBookingStatus(myBookingsPojos.get(pos).getBid(),"Denied");
+                }
+            } // to close the onItemSelected
+            public void onNothingSelected(AdapterView<?> parent)
+            {
 
             }
         });
-
         return obj2;
     }
 
     ProgressDialog progressDialog;
-    public void UpdateTrainerStatus(String ID,String verify){
+    public void UpdateBookingStatus(String ID,String verify){
         progressDialog = new ProgressDialog(cnt);
         progressDialog.setMessage("Loading....");
         progressDialog.show();
 
         ApiService service = RetroClient.getRetrofitInstance().create(ApiService.class);
-        Call<ResponseData> call = service.verifyTrainer(ID,verify);
+        Call<ResponseData> call = service.updatebooking(ID,verify);
         call.enqueue(new Callback<ResponseData>() {
             @Override
             public void onResponse(Call<ResponseData> call, Response<ResponseData> response) {
@@ -107,8 +134,9 @@ public class TrainerBookingsAdapter extends BaseAdapter {
                 if(response.body()==null){
                     Toast.makeText(cnt,"Server issue",Toast.LENGTH_SHORT).show();
                 }else {
-                    Intent intent=new Intent(cnt, AdminDashBoardActivity.class);
+                    Intent intent=new Intent(cnt, TrainersBookingActivity.class);
                     cnt.startActivity(intent);
+                    ((Activity)cnt).finish();
                     Toast.makeText(cnt," Trainer Verified successfully",Toast.LENGTH_SHORT).show();
 
                 }

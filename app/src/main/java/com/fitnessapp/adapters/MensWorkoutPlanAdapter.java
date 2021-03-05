@@ -3,19 +3,23 @@ package com.fitnessapp.adapters;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
+import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.cardview.widget.CardView;
 
+import com.bumptech.glide.Glide;
 import com.fitnessapp.R;
 import com.fitnessapp.activities.AdminDashBoardActivity;
 import com.fitnessapp.activities.MensWorkoutDetailsActivity;
+import com.fitnessapp.activities.WomensWorkoutDetailsActivity;
 import com.fitnessapp.api.ApiService;
 import com.fitnessapp.api.RetroClient;
 import com.fitnessapp.models.MensWorkoutPojo;
@@ -57,7 +61,7 @@ public class MensWorkoutPlanAdapter extends BaseAdapter {
     public View getView(final int pos, View view, ViewGroup viewGroup) {
         LayoutInflater obj1 = (LayoutInflater) cnt.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View obj2 = obj1.inflate(R.layout.adapter_mens_workout_plan, null);
-
+/*
         TextView tvWorkoutLevel = (TextView) obj2.findViewById(R.id.tvWorkoutLevel);
         tvWorkoutLevel.setText(mensWorkoutPojos.get(pos).getLevel());
 
@@ -67,10 +71,12 @@ public class MensWorkoutPlanAdapter extends BaseAdapter {
         TextView tvTotalTime = (TextView) obj2.findViewById(R.id.tvTotalTime);
         tvTotalTime.setText(mensWorkoutPojos.get(pos).getTim());
 
-        CardView cdMensWorkout=(CardView)obj2.findViewById(R.id.cdMensWorkout);
+        CardView cdMensWorkout=(CardView)obj2.findViewById(R.id.cdMensWorkout);*/
 
 
-        Button btnTry=(Button)obj2.findViewById(R.id.btnTry);
+
+
+       /* Button btnTry=(Button)obj2.findViewById(R.id.btnTry);
         btnTry.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -82,7 +88,34 @@ public class MensWorkoutPlanAdapter extends BaseAdapter {
                 intent.putExtra("url",mensWorkoutPojos.get(pos).getVlink());
                 cnt.startActivity(intent);
             }
+        });*/
+
+
+
+        ImageView imageview=(ImageView)obj2.findViewById(R.id.imageview);
+        Glide.with(cnt).load(URL+mensWorkoutPojos.get(pos).getPhoto()).into(imageview);
+
+        TextView tvWorkoutname = (TextView) obj2.findViewById(R.id.tvWorkoutname);
+        tvWorkoutname.setText(mensWorkoutPojos.get(pos).getWname());
+
+        CardView cvWorkout=(CardView)obj2.findViewById(R.id.cvWorkout);
+        cvWorkout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+
+                Intent intent=new Intent(cnt, MensWorkoutDetailsActivity.class);
+                intent.putExtra("image",mensWorkoutPojos.get(pos).getPhoto());
+                intent.putExtra("wname",mensWorkoutPojos.get(pos).getWname());
+                intent.putExtra("desc",mensWorkoutPojos.get(pos).getDes());
+                intent.putExtra("time",mensWorkoutPojos.get(pos).getTim());
+                intent.putExtra("url",mensWorkoutPojos.get(pos).getVlink());
+                cnt.startActivity(intent);
+
+            }
         });
+
+
 
 
 

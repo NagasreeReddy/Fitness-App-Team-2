@@ -81,24 +81,41 @@
             <Button
                 android:id="@+id/btnAccept"
                 android:text="Accept"
+                android:visibility="gone"
                 android:layout_alignParentRight="true"
                 android:layout_below="@+id/tvStates"
                 android:textColor="#fff"
                 android:background="@drawable/button_rounded3"
                 android:layout_width="@dimen/_90sdp"
-                android:layout_height="40dp" />
-
+                android:layout_height="@dimen/_35ssp" />
 
 
             <Button
                 android:id="@+id/btnDeny"
-                android:text="Deny"
-                android:textColor="#fff"
-                android:background="@drawable/button_rounded3"
-                android:layout_alignParentRight="true"
                 android:layout_width="@dimen/_90sdp"
-                android:layout_height="40dp" />
+                android:layout_height="40dp"
+                android:visibility="gone"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="1dp"
+                android:background="@drawable/button_rounded3"
+                android:text="Deny"
+                android:textColor="#fff" />
 
+            <Spinner
+                android:id="@+id/spinUpdateStatus"
+                android:layout_below="@+id/tvStates"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:entries="@array/updateStatus"
+                android:layout_marginBottom="@dimen/_5ssp"
+                android:background="@drawable/spinner_bottom_border"
+                android:paddingTop="@dimen/_10ssp"
+                android:paddingBottom="@dimen/_10ssp" />
 
 
         </RelativeLayout>

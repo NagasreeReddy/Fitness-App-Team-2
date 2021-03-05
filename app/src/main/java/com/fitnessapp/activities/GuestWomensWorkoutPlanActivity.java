@@ -48,7 +48,7 @@ public class GuestWomensWorkoutPlanActivity extends AppCompatActivity {
         progressDialog.show();
 
         ApiService service = RetroClient.getRetrofitInstance().create(ApiService.class);
-        Call<List<WomensWorkoutPojo>> call = service.getwomensworkouts();
+        Call<List<WomensWorkoutPojo>> call = service.guestwomens();
         call.enqueue(new Callback<List<WomensWorkoutPojo>>() {
             @Override
             public void onResponse(Call<List<WomensWorkoutPojo>> call, Response<List<WomensWorkoutPojo>> response) {

@@ -16,7 +16,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/_10sdp"
             android:layout_marginTop="@dimen/_45sdp"
-            android:text="Edit your Details"
+            android:text="Profile"
             android:textColor="#282C2E"
             android:textSize="@dimen/_20sdp" />
 

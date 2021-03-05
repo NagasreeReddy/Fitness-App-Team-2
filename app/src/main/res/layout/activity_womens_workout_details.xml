@@ -87,6 +87,15 @@
                 android:layout_height="wrap_content" />
 
 
+            <ImageView
+                android:id="@+id/Image_play"
+                android:layout_below="@+id/tvWorkoutDesc"
+                android:layout_centerInParent="true"
+                android:layout_margin="20dp"
+                android:layout_width="200dp"
+                android:layout_height="120dp"
+                android:background="@drawable/vid"/>
+
             <!--<TextView
                 android:id="@+id/tvWorkoutName"
                 android:text="Workout Name"

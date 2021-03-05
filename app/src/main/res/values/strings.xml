@@ -29,6 +29,13 @@
         <item>1 Hr</item>
     </string-array>
 
+
+    <string-array name="workoutGender">
+        <item>Please Select Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
     <string-array name="timings">
         <item> Timings</item>
         <item>7:00 AM</item>
@@ -39,6 +46,30 @@
         <item>4:00 PM</item>
         <item>5:00 PM</item>
         <item>6:00 PM</item>
+    </string-array>
+
+
+    <string-array name="ditenames">
+        <item>Select Diet Name</item>
+        <item>The Paleo Diet</item>
+        <item>The Vegan Diet</item>
+        <item>The HCG Diet</item>
+        <item>The Zone Diet</item>
+    </string-array>
+
+
+    <string-array name="updateStatus">
+        <item>Update Status</item>
+        <item>Confirmed</item>
+        <item>Denied</item>
+    </string-array>
+
+    <string-array name="bodyfatTarget">
+        <item>Select Body FatTarget</item>
+        <item>Athletes</item>
+        <item>Fitness</item>
+        <item>Acceptable</item>
+        <item>Obese</item>
     </string-array>
 
 

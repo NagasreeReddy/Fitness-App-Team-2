@@ -108,13 +108,13 @@ public class RegistrationActivity extends AppCompatActivity {
                 else
                 {
                     //startActivity(new Intent(RegistrationActivity.this, CustomerLoginPage.class));
-                    submitData();
+                    customerRegistration();
 
                 }            }
         });
     }
 
-    private void submitData() {
+    private void customerRegistration() {
         String fname = etFirstName.getText().toString();
         String lname = etLastName.getText().toString();
         String email = etEmail.getText().toString();
@@ -127,6 +127,9 @@ public class RegistrationActivity extends AppCompatActivity {
 
         ApiService service = RetroClient.getRetrofitInstance().create(ApiService.class);
         Call<ResponseData> call = service.userRegistration(fname,lname, email,password,gender,dob,"User");
+
+
+
         call.enqueue(new Callback<ResponseData>() {
             @Override
             public void onResponse(Call<ResponseData> call, Response<ResponseData> response) {
@@ -171,6 +174,8 @@ public class RegistrationActivity extends AppCompatActivity {
 
                     }
                 }, mYear, mMonth, mDay);
+        datePickerDialog.getDatePicker().setMaxDate(System.currentTimeMillis());
+
         datePickerDialog.show();
     }
     public void getGender(){

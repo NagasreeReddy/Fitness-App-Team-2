@@ -34,6 +34,9 @@ public class VerifyTrainerPojo {
     @SerializedName("utype")
     public String utype;
 
+    @SerializedName("phone")
+    private String phone;
+
 
     @SerializedName("verify")
     public String verify;
@@ -124,5 +127,13 @@ public class VerifyTrainerPojo {
 
     public void setVerify(String verify) {
         this.verify = verify;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 }

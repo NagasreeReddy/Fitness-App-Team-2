@@ -32,15 +32,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="453ce25f-23de-4e6e-b76f-72cbb9a1ca2d" name="Default Changelist" comment="changes in user dashboard .xml">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/AdminLoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/TrainerForgotPasswordActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/ViewMyGoalsActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/adapters/GetDitePlanAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/adapters/SearchTrainerAdapter.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/models/GetDitePlanPojo.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/models/MyGoals.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_admin_login.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_view_my_goals.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_my_goals.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_search_trainers.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_call.png" afterDir="false" />
@@ -50,7 +44,6 @@
       <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_mygoals.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_mygoals.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_mygoals.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/AdminDashBoardActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/AdminDashBoardActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/CustomerLoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fitnessapp/activities/CustomerLoginPage.java" afterDir="false" />
@@ -743,7 +736,49 @@
       <option name="project" value="LOCAL" />
       <updated>1614924718966</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="AdminLoginPage.java updated">
+      <created>1614924786694</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1614924786694</updated>
+    </task>
+    <task id="LOCAL-00045" summary="TrainerForgotPasswordActivity.java updated">
+      <created>1614924835127</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1614924835127</updated>
+    </task>
+    <task id="LOCAL-00046" summary="ViewMyGoalsActivity.java updated">
+      <created>1614924939005</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1614924939005</updated>
+    </task>
+    <task id="LOCAL-00047" summary="GetDitePlanAdapter.java updated">
+      <created>1614924976287</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1614924976287</updated>
+    </task>
+    <task id="LOCAL-00048" summary="SearchTrainerAdapter.java updated">
+      <created>1614925001857</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1614925001857</updated>
+    </task>
+    <task id="LOCAL-00049" summary="activity_view_my_goals.xml updated">
+      <created>1614925040708</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1614925040708</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -785,12 +820,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="GiveFeedbackActivity.java without Api calls" />
-    <MESSAGE value="GiveFeedbackActivity.java with api" />
-    <MESSAGE value="UserBookingsActivity.java without api" />
-    <MESSAGE value="MyFeedBackActivity.java with api connection linked" />
-    <MESSAGE value="TrainersBookingActivity.java no Api" />
-    <MESSAGE value="MyFeedBackActivity And Layout Edited" />
     <MESSAGE value="TrainersBookingActivity.java with api" />
     <MESSAGE value="TrainersInfoActivity.java without api" />
     <MESSAGE value="TrainersInfoActivity.java with api linkung to server" />
@@ -810,7 +839,13 @@
     <MESSAGE value="GetDitePlanActivity.java updated" />
     <MESSAGE value="activity_screen_one.xml updated" />
     <MESSAGE value="adapter_get_diteplan.xml updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="adapter_get_diteplan.xml updated" />
+    <MESSAGE value="AdminLoginPage.java updated" />
+    <MESSAGE value="TrainerForgotPasswordActivity.java updated" />
+    <MESSAGE value="ViewMyGoalsActivity.java updated" />
+    <MESSAGE value="GetDitePlanAdapter.java updated" />
+    <MESSAGE value="SearchTrainerAdapter.java updated" />
+    <MESSAGE value="activity_view_my_goals.xml updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="activity_view_my_goals.xml updated" />
   </component>
   <component name="WindowStateProjectService">
     <state x="533" y="173" key="#com.intellij.ide.util.MemberChooser" timestamp="1613041698665">
@@ -821,11 +856,11 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1612843033948" />
-    <state x="251" y="0" width="1161" height="824" key="CommitChangelistDialog2" timestamp="1614924718153">
+    <state x="251" y="0" width="1161" height="824" key="CommitChangelistDialog2" timestamp="1614925039930">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="235" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1614923198422" />
-    <state x="251" y="0" width="967" height="728" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1614924718153" />
+    <state x="251" y="0" width="967" height="728" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1614925039930" />
     <state x="282" y="0" width="1161" height="824" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1613675639974" />
     <state x="462" y="105" key="FileChooserDialogImpl" timestamp="1613608848673">
       <screen x="0" y="0" width="1366" height="728" />
@@ -851,10 +886,10 @@
     </state>
     <state width="1398" height="475" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1613042789608" />
     <state width="1398" height="245" key="GridCell.Tab.0.right/0.23.1440.820@0.23.1440.820" timestamp="1611041941529" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1614924725136">
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1614924839839">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1614924725136" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1614924839839" />
     <state x="309" y="110" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1614922954837" />
     <state x="330" y="172" key="com.intellij.ide.util.TipDialog" timestamp="1614899219447">
       <screen x="0" y="0" width="1280" height="680" />

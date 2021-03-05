@@ -79,6 +79,8 @@ public class WomensWorkoutPlanAdapter extends BaseAdapter {
                 intent.putExtra("image",workoutPojos.get(pos).getPhoto());
                 intent.putExtra("wname",workoutPojos.get(pos).getWname());
                 intent.putExtra("desc",workoutPojos.get(pos).getDes());
+                intent.putExtra("time",workoutPojos.get(pos).getTim());
+                intent.putExtra("url",workoutPojos.get(pos).getVlink());
                 cnt.startActivity(intent);
 
             }
