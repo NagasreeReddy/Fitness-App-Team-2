@@ -76,7 +76,7 @@ public class CustomerLoginPage extends AppCompatActivity {
                 }
                 else {
                     loginUser();
-                   // startActivity(new Intent(CustomerLoginPage.this, UserDashboardActivity.class));
+                    // startActivity(new Intent(CustomerLoginPage.this, UserDashboardActivity.class));
 
 
                 }
