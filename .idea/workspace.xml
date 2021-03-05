@@ -31,9 +31,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="453ce25f-23de-4e6e-b76f-72cbb9a1ca2d" name="Default Changelist" comment="changes in user dashboard .xml">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="453ce25f-23de-4e6e-b76f-72cbb9a1ca2d" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -85,7 +83,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android-custom-view/Users/mallangiparameswarreddy/.gradle/caches/modules-2/files-2.1/com.google.android.material/material/1.2.1/37d55d5141066b3d118d24232fa7025b65eb3a74/material-1.2.1-sources.jar!/com/google/android/material/textfield/TextInputEditText.java_SELECTED" value="TextInputEditText" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/layout" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/menu" />
     <property name="memory.settings.postsync.last.time.stamp" value="1613187735087" />
     <property name="multi-representation-preview/Users/mallangiparameswarreddy/.gradle/caches/modules-2/files-2.1/com.google.android.material/material/1.2.1/37d55d5141066b3d118d24232fa7025b65eb3a74/material-1.2.1-sources.jar!/com/google/android/material/textfield/TextInputEditText.java_selected" value="Custom views" />
   </component>
@@ -100,11 +98,11 @@
       <recent name="com.fitnessapp.activities" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\student\AndroidStudioProjects\Fitness(4\Fitness-App-Team-2\app\src\main\res\menu" />
       <recent name="C:\Users\Mani Kiran\AndroidStudioProjects\Fitness-App-Team-2\app\src\main\res\layout" />
       <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
       <recent name="$PROJECT_DIR$/app/src/main" />
       <recent name="$PROJECT_DIR$/app/src/main/res/layout" />
-      <recent name="$PROJECT_DIR$/app/src/main/res" />
     </key>
     <key name="android.template.1999651059">
       <recent name="com.fitnessapp.activities" />
@@ -116,10 +114,10 @@
       <recent name="com.fitnessapp.activities" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.fitnessapp" />
       <recent name="com.fitnessapp.adapters" />
       <recent name="com.fitnessapp.activities" />
       <recent name="com.fitnessapp.models" />
-      <recent name="com.fitnessapp" />
     </key>
   </component>
   <component name="RunManager" selected="Android App.app">
@@ -369,20 +367,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1611027988848</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Fixed Commit Problem final">
-      <created>1613611008300</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1613611008300</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Get workout finished">
-      <created>1613613403786</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1613613403786</updated>
     </task>
     <task id="LOCAL-00004" summary="Get workout finished">
       <created>1613613582795</created>
@@ -713,7 +697,21 @@
       <option name="project" value="LOCAL" />
       <updated>1614959402190</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="changes made in code">
+      <created>1614960302304</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1614960302304</updated>
+    </task>
+    <task id="LOCAL-00052" summary="admin_navigation_menu.xml changes">
+      <created>1614960493498</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1614960493498</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -755,8 +753,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="TrainersInfoActivity.java without api" />
-    <MESSAGE value="TrainersInfoActivity.java with api linkung to server" />
     <MESSAGE value="UserBookingsActivity.java withot api" />
     <MESSAGE value="UserBookingsActivity.java with Api" />
     <MESSAGE value="Made some changes Project.xml" />
@@ -780,7 +776,9 @@
     <MESSAGE value="SearchTrainerAdapter.java updated" />
     <MESSAGE value="activity_view_my_goals.xml updated" />
     <MESSAGE value="chnges in MyGoalsAdapter.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="chnges in MyGoalsAdapter.java" />
+    <MESSAGE value="changes made in code" />
+    <MESSAGE value="admin_navigation_menu.xml changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="admin_navigation_menu.xml changes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="533" y="173" key="#com.intellij.ide.util.MemberChooser" timestamp="1613041698665">
@@ -791,12 +789,12 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1612843033948" />
-    <state x="282" y="0" width="1161" height="824" key="CommitChangelistDialog2" timestamp="1614959401322">
+    <state x="282" y="0" width="1161" height="824" key="CommitChangelistDialog2" timestamp="1614960492949">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="235" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1614923198422" />
     <state x="251" y="0" width="967" height="728" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1614925039930" />
-    <state x="282" y="0" width="1161" height="824" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1614959401322" />
+    <state x="282" y="0" width="1161" height="824" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1614960492949" />
     <state x="462" y="105" key="FileChooserDialogImpl" timestamp="1613608848673">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -821,11 +819,11 @@
     </state>
     <state width="1398" height="475" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1613042789608" />
     <state width="1398" height="245" key="GridCell.Tab.0.right/0.23.1440.820@0.23.1440.820" timestamp="1611041941529" />
-    <state x="309" y="109" key="Vcs.Push.Dialog.v2" timestamp="1614959410071">
+    <state x="309" y="109" key="Vcs.Push.Dialog.v2" timestamp="1614960501990">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1614924839839" />
-    <state x="309" y="109" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1614959410071" />
+    <state x="309" y="109" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1614960501990" />
     <state x="309" y="110" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1614922954837" />
     <state x="330" y="172" key="com.intellij.ide.util.TipDialog" timestamp="1614899219447">
       <screen x="0" y="0" width="1280" height="680" />
