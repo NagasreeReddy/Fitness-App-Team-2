@@ -46,10 +46,10 @@ public class AddWorkOutsActivity extends AppCompatActivity implements EasyPermis
     private static final String SERVER_PATH = "http://getfitt.club/";
     private Uri uri;
     ProgressDialog pd;
-    Spinner spinWorkoutType,spinWorkoutLevel,spinWorkoutTime;
+    Spinner spinWorkoutType,spinWorkoutLevel,spinWorkoutTime,spinWorkoutGender;
     RadioButton radioMale,radioFemale;
     String gender;
-    TextInputEditText etWorkoutname,etDescription,etVlink;
+    TextInputEditText etWorkoutname,etDescription,etVlink,etWorkoutType;
     Button btn_upload,btnAddWorkout;
 
     @Override
@@ -64,6 +64,7 @@ public class AddWorkOutsActivity extends AppCompatActivity implements EasyPermis
         spinWorkoutType=(Spinner)findViewById(R.id.spinWorkoutType);
         spinWorkoutLevel=(Spinner)findViewById(R.id.spinWorkoutLevel);
         spinWorkoutTime=(Spinner)findViewById(R.id.spinWorkoutTime);
+        spinWorkoutGender=(Spinner)findViewById(R.id.spinWorkoutGender);
 
         radioMale=(RadioButton)findViewById(R.id.radioMale);
         radioFemale=(RadioButton)findViewById(R.id.radioFemale);
@@ -71,6 +72,7 @@ public class AddWorkOutsActivity extends AppCompatActivity implements EasyPermis
         etWorkoutname=(TextInputEditText)findViewById(R.id.etWorkoutname);
         etDescription=(TextInputEditText)findViewById(R.id.etDescription);
         etVlink=(TextInputEditText)findViewById(R.id.etVlink);
+        etWorkoutType=(TextInputEditText)findViewById(R.id.etWorkoutType);
 
         genderSelect();
         btn_upload=(Button)findViewById(R.id.btn_upload);
@@ -88,6 +90,10 @@ public class AddWorkOutsActivity extends AppCompatActivity implements EasyPermis
         btnAddWorkout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if(spinWorkoutGender.getSelectedItem().toString().equals("Please Select Gender")){
+                    Toast.makeText(AddWorkOutsActivity.this, "Select Gender", Toast.LENGTH_SHORT).show();
+                    return;
+                }
                 addWorkout();
 
 
@@ -143,9 +149,9 @@ public class AddWorkOutsActivity extends AppCompatActivity implements EasyPermis
         pd.setTitle("Loading");
         pd.show();
         Map<String, String> map = new HashMap<>();
-        map.put("wtype", spinWorkoutType.getSelectedItem().toString());
+        map.put("wtype", etWorkoutType.getText().toString());
         map.put("level", spinWorkoutLevel.getSelectedItem().toString());
-        map.put("gender", gender);
+        map.put("gender", spinWorkoutGender.getSelectedItem().toString());
         map.put("wname", etWorkoutname.getText().toString());
         map.put("des", etDescription.getText().toString());
         map.put("tim", spinWorkoutTime.getSelectedItem().toString());
