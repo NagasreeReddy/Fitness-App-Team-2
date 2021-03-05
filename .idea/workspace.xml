@@ -31,9 +31,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="453ce25f-23de-4e6e-b76f-72cbb9a1ca2d" name="Default Changelist" comment="changes in TrainerEditProfileActivity.java">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="453ce25f-23de-4e6e-b76f-72cbb9a1ca2d" name="Default Changelist" comment="changes in user dashboard .xml" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -591,7 +589,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614922531517</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="changes in user dashboard .xml">
+      <created>1614922942816</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1614922942816</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -633,7 +638,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="in TrainerLoginPage add functanality" />
     <MESSAGE value="VerifyTrainersActivity And Layout Updated" />
     <MESSAGE value="WomensWorkoutPlanActivity And Layout Edited" />
     <MESSAGE value="WorkoutPlanActivity And Layout Edited and updated" />
@@ -658,7 +662,8 @@
     <MESSAGE value="screen of .xml is added" />
     <MESSAGE value="ScreenTwo.java  is added" />
     <MESSAGE value="changes in TrainerEditProfileActivity.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="changes in TrainerEditProfileActivity.java" />
+    <MESSAGE value="changes in user dashboard .xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="changes in user dashboard .xml" />
   </component>
   <component name="WindowStateProjectService">
     <state x="533" y="173" key="#com.intellij.ide.util.MemberChooser" timestamp="1613041698665">
@@ -699,11 +704,11 @@
     </state>
     <state width="1398" height="475" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1613042789608" />
     <state width="1398" height="245" key="GridCell.Tab.0.right/0.23.1440.820@0.23.1440.820" timestamp="1611041941529" />
-    <state x="309" y="110" key="Vcs.Push.Dialog.v2" timestamp="1614922540336">
+    <state x="309" y="110" key="Vcs.Push.Dialog.v2" timestamp="1614922954837">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1613613616071" />
-    <state x="309" y="110" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1614922540336" />
+    <state x="309" y="110" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1614922954837" />
     <state x="330" y="172" key="com.intellij.ide.util.TipDialog" timestamp="1614899219447">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
