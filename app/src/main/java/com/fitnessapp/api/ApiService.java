@@ -2,11 +2,14 @@ package com.fitnessapp.api;
 
 
 
+import com.fitnessapp.activities.GetDitePlanActivity;
 import com.fitnessapp.activities.GetMyWorkoutActivity;
 import com.fitnessapp.models.EditProfilePojo;
+import com.fitnessapp.models.GetDitePlanPojo;
 import com.fitnessapp.models.MensWorkoutPojo;
 import com.fitnessapp.models.MyBookingsPojo;
 import com.fitnessapp.models.MyFeedbackPojo;
+import com.fitnessapp.models.MyGoals;
 import com.fitnessapp.models.MyWorkoutsPojo;
 import com.fitnessapp.models.ResponseData;
 import com.fitnessapp.models.TrainerEditProfilePojo;
@@ -28,6 +31,7 @@ import retrofit2.http.Query;
 
 public interface ApiService {
 
+   // http://getfitt.club/getfit/getfit_registration.php
     @GET("/getfit/getfit_registration.php")
     Call<ResponseData> userRegistration(
             @Query("fname") String fname,
@@ -38,6 +42,7 @@ public interface ApiService {
             @Query("dob") String dob,
             @Query("utype") String utype);
 
+    // http://getfitt.club/getfit/trainer_registration.php
     @GET("/getfit/trainer_registration.php")
     Call<ResponseData> trainerRegistration(
             @Query("fname") String fname,
@@ -47,6 +52,7 @@ public interface ApiService {
             @Query("exp") String exp,
             @Query("gender") String gender,
             @Query("dob") String dob,
+            @Query("phone") String phone,
             @Query("utype") String utype);
 
     @GET("/getfit/getfit_login.php")
@@ -101,7 +107,6 @@ public interface ApiService {
             @Query("name") String name,
             @Query("email") String email,
             @Query("lname") String lname,
-            @Query("utype") String utype,
             @Query("pass") String pass);
 
 
@@ -110,16 +115,17 @@ public interface ApiService {
             @Query("name") String name,
             @Query("email") String email,
             @Query("lname") String lname,
-            @Query("exp") String exp,
-            @Query("rating") String rating,
+            @Query("dob") String dob,
             @Query("status") String status,
-            @Query("utype") String utype,
-            @Query("tid") String tid,
+            @Query("phone") String phone,
             @Query("password") String password);
 
 
-    @GET("getfit/forgotPassword.php")
+    @GET("getfit/forgotPass.php")
     Call<ResponseData> forgotPassword(@Query("emailid") String emailid);
+
+    @GET("getfit/forgottrainer.php")
+    Call<ResponseData> forgottrainer(@Query("emailid") String emailid);
 
     @GET("getfit/myrequests.php")
     Call<List<MyBookingsPojo>> myrequests(@Query("email") String email);
@@ -134,9 +140,17 @@ public interface ApiService {
     @GET("getfit/myfeedbacks.php")
     Call<List<MyFeedbackPojo>> myfeedbacks(@Query("email") String email);
 
+    @GET("getfit/getmygoals.php")
+    Call<List<MyGoals>> getmygoals(@Query("email") String email);
+
+
 
     @GET("getfit/getalltrainers.php")
     Call<List<VerifyTrainerPojo>> getAllTrainers();
+
+
+    @GET("getfit/getdietplans.php")
+    Call<List<GetDitePlanPojo>> getdietplans();
 
 
     @GET("getfit/getworkouts.php")
@@ -147,12 +161,26 @@ public interface ApiService {
     Call<List<MensWorkoutPojo>> getmensworkouts();
 
 
+
+    @GET("getfit/guestmens.php")
+    Call<List<MensWorkoutPojo>> guestmens();
+
+
     @GET("getfit/getwomensworkouts.php")
     Call<List<WomensWorkoutPojo>> getwomensworkouts();
 
 
+
+    @GET("getfit/guestwomens.php")
+    Call<List<WomensWorkoutPojo>> guestwomens();
+
+
     @GET("getfit/getusertrainers.php")
     Call<List<VerifyTrainerPojo>> getVerifiedTrainers();
+
+
+    @GET("getfit/searchtrainer.php")
+    Call<List<VerifyTrainerPojo>> searchtrainer(@Query("gender") String gender);
 
     @GET("getfit/verifytrainer.php")
     Call<ResponseData> verifyTrainer (
@@ -160,10 +188,22 @@ public interface ApiService {
             @Query("verify") String verify
     );
 
+    @GET("getfit/updatebooking.php")
+    Call<ResponseData> updatebooking (
+            @Query("bid") String bid,
+            @Query("status") String status
+    );
+
 
     @GET("getfit/deletecontent.php")
     Call<ResponseData> deletecontent (
             @Query("id") String id);
+
+    @GET("getfit/deletegoal.php")
+    Call<ResponseData> deleteGoal (
+            @Query("id") String id);
+
+
 
     @Multipart
     @POST("getfit/addcontent.php")
@@ -171,4 +211,19 @@ public interface ApiService {
             @Part MultipartBody.Part file,
             @PartMap Map<String, String> partMap
     );
+
+    @GET("/getfit/adddiet.php")
+    Call<ResponseData> adddiet(
+            @Query("dname") String dname,
+            @Query("des") String des);
+
+
+    @GET("/getfit/addgoal.php")
+    Call<ResponseData> addgoal(
+            @Query("gname") String gname,
+            @Query("tall") String tall,
+            @Query("weight") String weight,
+            @Query("current_bodyfat") String current_bodyfat,
+            @Query("target_bodyfat") String target_bodyfat,
+            @Query("uname") String uname);
 }
