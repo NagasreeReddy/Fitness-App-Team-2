@@ -102,3 +102,40 @@ public class TrainerLoginPage extends AppCompatActivity {
         pd= new ProgressDialog(TrainerLoginPage.this);
         pd.setTitle("Please wait,Data is being submit...");
         pd.show();
+        ApiService apiService = RetroClient.getRetrofitInstance().create(ApiService.class);
+        Call<ResponseData> call = apiService.trainerLogin(editTextEmail.getText().toString(),editTextPassword.getText().toString());
+
+        call.enqueue(new Callback<ResponseData>() {
+            @Override
+            public void onResponse(Call<ResponseData> call, Response<ResponseData> response) {
+                pd.dismiss();
+                if (response.body().status.equals("true")) {
+                    SharedPreferences sharedPreferences = getSharedPreferences(Utils.SHREF, Context.MODE_PRIVATE);
+                    SharedPreferences.Editor et=sharedPreferences.edit();
+                    et.putString("user_name",editTextEmail.getText().toString());
+                    et.commit();
+                    startActivity(new Intent(TrainerLoginPage.this, TrainerDashboardActivity.class));
+                    finish();
+                } else {
+                    Toast.makeText(TrainerLoginPage.this, response.body().message, Toast.LENGTH_LONG).show();
+                }
+            }
+
+            @Override
+            public void onFailure(Call<ResponseData> call, Throwable t) {
+                pd.dismiss();
+                Toast.makeText(TrainerLoginPage.this, t.getMessage(), Toast.LENGTH_LONG).show();
+            }
+        });
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                this.finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+}
