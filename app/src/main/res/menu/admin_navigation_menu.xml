@@ -17,9 +17,7 @@
         android:visible="false"
         android:title="Verify Trainer"/>
 
-    <item android:id="@+id/view_training_content"
-        android:visible="false"
-        android:title="View Training Content"/>
+
 
     <item android:id="@+id/logout"
         android:title="Logout"/>
